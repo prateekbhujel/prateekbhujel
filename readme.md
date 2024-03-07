@@ -9,7 +9,7 @@ I've sculpted my skills in PHP with Laravel at the prestigious Broadway Info Sys
 ## Behold, My Masterpieces! 🚀
 Prepare to be mesmerized by the brilliance of my projects:
 
-1. **Point of Sale (POS) System**: Witness the magic of seamless sales transactions and inventory management in my robust POS system. [Explore POS](https://github.com/prateekbhujel/point-of-sale)
+1. **Point of Sale (POS) System**: Witness the magic of seamless sales transactions and inventory management in my robust POS system. [Explore POS](https://github.com/prateekbhujel/POS)
 
 2. **Warehouse Management System**: Dive into the world of efficient inventory tracking and warehouse operations optimization with my groundbreaking system. [Discover WMS](https://github.com/prateekbhujel/warehouse-management-system)
 
@@ -17,9 +17,7 @@ Prepare to be mesmerized by the brilliance of my projects:
 
 4. **Bhandara E-Commerce**: Witness simplicity meet sophistication in my sleek Laravel e-commerce web app. [Shop at Bhandara](https://github.com/prateekbhujel/bhandara-e-com)
 
-5. **Real Estate**: Transform the real estate industry with my cutting-edge SaaS-based project on Laravel Script. [Explore Real Estate](https://github.com/prateekbhujel/realestate)
-
-6. **CMS**: Revolutionize news portals with my simplistic yet powerful PHP CMS project. [Empower CMS](https://github.com/prateekbhujel/cms)
+5. **CMS**: Revolutionize news portals with my simplistic yet powerful PHP CMS project. [Empower CMS](https://github.com/prateekbhujel/cms)
 
 ## Skills that Sparkle ✨
 My arsenal of skills includes mastery in:
