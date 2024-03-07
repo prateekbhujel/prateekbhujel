@@ -1,10 +1,8 @@
-# Prateek Bhujel's Portfolio
-
 ## Hello, World! 🌟
-Welcome to my world of creativity and innovation! I'm Prateek Bhujel, a dynamic developer from the vibrant city of Biratnagar, Nepal. Step into my realm of cutting-edge technology and let's embark on an exhilarating journey through my captivating portfolio.
+Welcome to my world of creativity and innovation! I'm Pratik Bhujel, a dynamic developer from the vibrant city of Biratnagar, Nepal. Step into my realm of cutting-edge technology and let's embark on an exhilarating journey through my captivating portfolio.
 
 ## Unleashing Creativity through Education and Training 🎓
-I've sculpted my skills in PHP with Laravel at the prestigious Broadway Info Sys, where I delved deep into the intricacies of web development from June 2023 to January 2024. My thirst for knowledge led me to explore various avenues of self-learning, paving the way for my creative pursuits.
+While my passion for crafting code ignited in 2020, it was my time at Broadway Info Sys that truly fortified my foundations and added value to my journey. From June 2023 to January 2024, I immersed myself in the intricacies of PHP with Laravel, setting the stage for my creative pursuits.
 
 ## Behold, My Masterpieces! 🚀
 Prepare to be mesmerized by the brilliance of my projects:
