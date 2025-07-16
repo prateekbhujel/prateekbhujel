@@ -1,37 +1,21 @@
-## Hello, World! 🌟
-Welcome to my world of creativity and innovation! I'm Pratik Bhujel, a dynamic developer from the vibrant city of Biratnagar, Nepal. Step into my realm of cutting-edge technology and let's embark on an exhilarating journey through my captivating portfolio.
+# 💫 About Me:
+## Hello, World! 🌟<br>Welcome to my world of creativity and innovation! I'm Pratik Bhujel, a dynamic developer from the vibrant city of Biratnagar, Nepal. Step into my realm of cutting-edge technology and let's embark on an exhilarating journey through my captivating portfolio.<br><br>## Unleashing Creativity through Education and Training 🎓<br>While my passion for crafting code ignited in 2020, it was my time at Broadway Info Sys that truly fortified my foundations and added value to my journey. From June 2023 to January 2024, I immersed myself in the intricacies of PHP with Laravel, setting the stage for my creative pursuits.<br><br>## Behold, My Masterpieces! 🚀<br>Prepare to be mesmerized by the brilliance of my projects:<br><br>1. **Point of Sale (POS) System**: Witness the magic of seamless sales transactions and inventory management in my robust POS system. [Explore POS](https://github.com/prateekbhujel/POS)<br><br>2. **Warehouse Management System**: Dive into the world of efficient inventory tracking and warehouse operations optimization with my groundbreaking system. [Discover WMS](https://github.com/prateekbhujel/warehouse-management-system)<br><br>3. **SnapHub**: Immerse yourself in the beauty of captivating images showcased seamlessly in my photo gallery project. [Experience SnapHub](https://github.com/prateekbhujel/Snaphub)<br><br>4. **Bhandara E-Commerce**: Witness simplicity meet sophistication in my sleek Laravel e-commerce web app. [Shop at Bhandara](https://github.com/prateekbhujel/bhandara-e-com)<br><br>5. **CMS**: Revolutionize news portals with my simplistic yet powerful PHP CMS project. [Empower CMS](https://github.com/prateekbhujel/cms)<br><br>## Skills that Sparkle ✨<br>My arsenal of skills includes mastery in:<br><br>- PHP<br>- JavaScript<br>- jQuery<br>- Bootstrap<br>- HTML<br>- CSS<br>- Laravel<br>- REST API Development<br><br>I'm not just proficient; I'm a virtuoso continuously pushing the boundaries of innovation.<br><br>## Let's Connect and Conquer! 🤝<br>The journey is more exhilarating with companions. Join me in shaping the future of technology. Reach out for collaboration opportunities, intriguing discussions, or simply a friendly chat! Drop me an email at [prateekbhujelpb@gmail.com](mailto:prateekbhujelpb@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/pratikbhujel/).<br><br>Thank you for embarking on this adventure with me! Let's create magic together! 🚀🌟<br>
 
-## Unleashing Creativity through Education and Training 🎓
-While my passion for crafting code ignited in 2020, it was my time at Broadway Info Sys that truly fortified my foundations and added value to my journey. From June 2023 to January 2024, I immersed myself in the intricacies of PHP with Laravel, setting the stage for my creative pursuits.
 
-## Behold, My Masterpieces! 🚀
-Prepare to be mesmerized by the brilliance of my projects:
+## 🌐 Socials:
+[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/bhujelprateek) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/prateekbhujel) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/pratikbhujel) [![X](https://img.shields.io/badge/X-black.svg?logo=X&logoColor=white)](https://x.com/prateekbhujel) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:prateekbhujelpb@gmail.com) 
 
-1. **Point of Sale (POS) System**: Witness the magic of seamless sales transactions and inventory management in my robust POS system. [Explore POS](https://github.com/prateekbhujel/POS)
+# 💻 Tech Stack:
+![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
+# 📊 GitHub Stats:
+![](https://github-readme-stats.vercel.app/api?username=prateekbhujel&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://nirzak-streak-stats.vercel.app/?user=prateekbhujel&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=prateekbhujel&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
 
-2. **Warehouse Management System**: Dive into the world of efficient inventory tracking and warehouse operations optimization with my groundbreaking system. [Discover WMS](https://github.com/prateekbhujel/warehouse-management-system)
+### ✍️ Random Dev Quote
+![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 
-3. **SnapHub**: Immerse yourself in the beauty of captivating images showcased seamlessly in my photo gallery project. [Experience SnapHub](https://github.com/prateekbhujel/Snaphub)
+---
+[![](https://visitcount.itsvg.in/api?id=prateekbhujel&icon=1&color=0)](https://visitcount.itsvg.in)
 
-4. **Bhandara E-Commerce**: Witness simplicity meet sophistication in my sleek Laravel e-commerce web app. [Shop at Bhandara](https://github.com/prateekbhujel/bhandara-e-com)
-
-5. **CMS**: Revolutionize news portals with my simplistic yet powerful PHP CMS project. [Empower CMS](https://github.com/prateekbhujel/cms)
-
-## Skills that Sparkle ✨
-My arsenal of skills includes mastery in:
-
-- PHP
-- JavaScript
-- jQuery
-- Bootstrap
-- HTML
-- CSS
-- Laravel
-- REST API Development
-
-I'm not just proficient; I'm a virtuoso continuously pushing the boundaries of innovation.
-
-## Let's Connect and Conquer! 🤝
-The journey is more exhilarating with companions. Join me in shaping the future of technology. Reach out for collaboration opportunities, intriguing discussions, or simply a friendly chat! Drop me an email at [prateekbhujelpb@gmail.com](mailto:prateekbhujelpb@gmail.com) or connect with me on [LinkedIn](https://www.linkedin.com/in/pratikbhujel/).
-
-Thank you for embarking on this adventure with me! Let's create magic together! 🚀🌟
+<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
