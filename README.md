@@ -17,30 +17,6 @@ These are the upstream pull requests that actually made it in. I keep this secti
 
 I continue to spend most of my open source time in the Laravel and PHP ecosystem, especially around edge cases, validation behavior, and regression fixes.
 
-## Open Source Focus
-
-- PHP internals and runtime behavior
-- Laravel and package-level bug fixes
-- Regression testing
-- DX and performance improvements
-
-## How I Work
-
-- Reproduce first
-- Write or tighten the failing test
-- Ship the smallest safe fix
-- Keep the patch readable for maintainers
-
-## Selected Links
-
-- [All public pull requests](https://github.com/pulls?q=is%3Apr+author%3Aprateekbhujel+is%3Apublic)
-- [All public issues](https://github.com/issues?q=is%3Aissue+author%3Aprateekbhujel+is%3Apublic)
-- [Repositories](https://github.com/prateekbhujel?tab=repositories)
-
-## Stack
-
-`PHP` `Laravel` `MySQL` `JavaScript` `REST APIs` `Git`
-
 ## Connect
 
 - [LinkedIn](https://linkedin.com/in/pratikbhujel)
