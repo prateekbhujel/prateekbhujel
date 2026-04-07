@@ -1,87 +1,43 @@
-![Header](https://capsule-render.vercel.app/api?type=waving&color=0:0f172a,100:1d4ed8&height=180&section=header&text=Pratik%20Bhujel&fontSize=44&fontColor=ffffff&animation=twinkling&fontAlignY=36)
+# Pratik Bhujel
 
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&duration=2600&pause=850&color=38BDF8&center=true&vCenter=true&width=900&lines=Laravel+Developer+from+Nepal;Open+Source+Contributor;I+turn+real+bugs+into+small%2C+tested+fixes" alt="Typing SVG" />
-</p>
+Backend and open source developer from Nepal.
 
-<p align="center">
-  <a href="https://github.com/prateekbhujel?tab=followers">
-    <img src="https://img.shields.io/github/followers/prateekbhujel?label=Followers&style=for-the-badge&color=1d4ed8" alt="Followers" />
-  </a>
-  <a href="https://github.com/prateekbhujel?tab=repositories">
-    <img src="https://img.shields.io/badge/View-Repositories-0f172a?style=for-the-badge&logo=github&logoColor=white" alt="Repositories" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=prateekbhujel&label=Profile+Views&color=1d4ed8&style=for-the-badge" alt="Profile views" />
-</p>
+I build with PHP and Laravel, and I spend a lot of time on the part of software work I enjoy most: reproducing bugs, reducing them to the smallest failing case, adding regression coverage, and sending reviewable fixes upstream.
 
-<p align="center">
-  <a href="#start-here"><img src="https://img.shields.io/badge/Start%20Here-0f172a?style=flat-square&logo=readme&logoColor=white" alt="Start Here" /></a>
-  <a href="#open-source-lab"><img src="https://img.shields.io/badge/Open%20Source%20Lab-1d4ed8?style=flat-square&logo=github&logoColor=white" alt="Open Source Lab" /></a>
-  <a href="#live-dashboard"><img src="https://img.shields.io/badge/Live%20Dashboard-0f172a?style=flat-square&logo=graphql&logoColor=white" alt="Live Dashboard" /></a>
-  <a href="#connect"><img src="https://img.shields.io/badge/Connect-1d4ed8?style=flat-square&logo=linktree&logoColor=white" alt="Connect" /></a>
-</p>
+> I like small diffs, clear tests, and fixes that make future bugs harder to reintroduce.
 
-## Start Here
-- I build Laravel apps and backend systems that solve practical business problems.
-- I contribute to open source with reproducible bug reports and test-backed patches.
-- I prefer clean diffs, clear context, and fixes that are easy to review.
+## Recently
 
-<details open>
-<summary><b>Choose your path</b></summary>
+- `2026-04-06` Merged a contribution into [`php/php-src`](https://github.com/php/php-src/pull/21319) to promote invalid `ext/snmp` input warnings to `ValueError`.
+- `2026-02-25` Merged a fix into [`livewire/blaze`](https://github.com/livewire/blaze/pull/63) for a null offset deprecation in config path matching.
+- I continue to spend most of my open source time in the Laravel and PHP ecosystem, especially around edge cases, validation behavior, and regression fixes.
 
-### I want to see your code
-- [Browse all repositories](https://github.com/prateekbhujel?tab=repositories)
-- [See all public pull requests](https://github.com/pulls?q=is%3Apr+author%3Aprateekbhujel+is%3Apublic)
+## Open Source Focus
 
-### I want to collaborate
-- [Open issue discussions](https://github.com/issues?q=is%3Aissue+author%3Aprateekbhujel+is%3Apublic)
-- [Recent merged PR in Livewire Blaze](https://github.com/livewire/blaze/pull/63)
+- PHP internals and runtime behavior
+- Laravel and package-level bug fixes
+- Regression testing
+- DX and performance improvements
 
-### I want updates
-- Follow on [GitHub](https://github.com/prateekbhujel?tab=followers)
-- Connect on [LinkedIn](https://linkedin.com/in/pratikbhujel) and [X](https://x.com/prateekbhujel)
+## How I Work
 
-</details>
+- Reproduce first
+- Write or tighten the failing test
+- Ship the smallest safe fix
+- Keep the patch readable for maintainers
 
-## Open Source Lab
-- Current focus: Laravel ecosystem bug fixes, DX improvements, and performance tuning.
-- Approach: reproduce first, write/adjust tests, then ship smallest safe fix.
-- Goal: keep contributions understandable for maintainers and useful for users.
+## Selected Links
 
-## Toolbox
-![PHP](https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white)
-![Laravel](https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![REST API](https://img.shields.io/badge/REST%20API-0A0A0A?style=for-the-badge)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+- [All public pull requests](https://github.com/pulls?q=is%3Apr+author%3Aprateekbhujel+is%3Apublic)
+- [All public issues](https://github.com/issues?q=is%3Aissue+author%3Aprateekbhujel+is%3Apublic)
+- [Repositories](https://github.com/prateekbhujel?tab=repositories)
 
-## Live Dashboard
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=prateekbhujel&theme=github_dark" alt="Profile details" />
-</p>
+## Stack
 
-<details>
-<summary><b>Open language and contribution panels</b></summary>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=prateekbhujel&theme=github_dark" alt="Repos per language" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=prateekbhujel&theme=github_dark" alt="Most commit language" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=prateekbhujel&theme=dark&hide_border=true" alt="Streak stats" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=prateekbhujel&theme=github-compact&hide_border=true" alt="Activity graph" />
-</p>
-
-</details>
+`PHP` `Laravel` `MySQL` `JavaScript` `REST APIs` `Git`
 
 ## Connect
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/pratikbhujel)
-[![X](https://img.shields.io/badge/X-000000?logo=x&logoColor=white)](https://x.com/prateekbhujel)
-[![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:prateekbhujelpb@gmail.com)
 
-![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:1d4ed8,100:0f172a&height=110&section=footer)
+- [LinkedIn](https://linkedin.com/in/pratikbhujel)
+- [X](https://x.com/prateekbhujel)
+- [Email](mailto:prateekbhujelpb@gmail.com)
