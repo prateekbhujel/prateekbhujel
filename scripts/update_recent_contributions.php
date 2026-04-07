@@ -147,23 +147,45 @@ function extractRepositoryName(string $repositoryUrl): string
 function renderPullRequestBlock(array $items): string
 {
     if ($items === []) {
-        return '- Watching for the next merged upstream pull request.';
+        return '- Nothing new has merged upstream yet.';
     }
 
     $lines = [];
 
     foreach ($items as $item) {
         $lines[] = sprintf(
-            '- `%s` [`%s#%d`](%s) - %s',
-            $item['date'],
+            '- %s: `%s` merged [%s](%s)%s',
+            formatDisplayDate($item['date']),
             $item['repo'],
-            $item['number'],
-            $item['url'],
             $item['title'],
+            $item['url'],
+            sentencePunctuation($item['title']),
         );
     }
 
     return implode(PHP_EOL, $lines);
+}
+
+function formatDisplayDate(string $date): string
+{
+    $timestamp = strtotime($date);
+
+    if ($timestamp === false) {
+        return $date;
+    }
+
+    return date('M j, Y', $timestamp);
+}
+
+function sentencePunctuation(string $title): string
+{
+    $lastCharacter = substr($title, -1);
+
+    if (in_array($lastCharacter, ['.', '!', '?'], true)) {
+        return '';
+    }
+
+    return '.';
 }
 
 function replaceGeneratedBlock(

@@ -6,13 +6,13 @@ I build with PHP and Laravel, and I spend a lot of time on the part of software 
 
 > I like small diffs, clear tests, and fixes that make future bugs harder to reintroduce.
 
-## Recently
+## Latest Upstream Work
 
-_This section is updated automatically from your latest merged public upstream pull requests._
+These are the upstream pull requests that actually made it in. I keep this section synced automatically so it stays honest.
 
 <!-- recent-contributions:start -->
-- `2026-04-06` [`php/php-src#21319`](https://github.com/php/php-src/pull/21319) - ext/snmp: promote invalid-input warnings to ValueError
-- `2026-02-25` [`livewire/blaze#63`](https://github.com/livewire/blaze/pull/63) - Fix null offset deprecation in Config path matching
+- Apr 6, 2026: `php/php-src` merged [ext/snmp: promote invalid-input warnings to ValueError](https://github.com/php/php-src/pull/21319).
+- Feb 25, 2026: `livewire/blaze` merged [Fix null offset deprecation in Config path matching](https://github.com/livewire/blaze/pull/63).
 <!-- recent-contributions:end -->
 
 I continue to spend most of my open source time in the Laravel and PHP ecosystem, especially around edge cases, validation behavior, and regression fixes.
