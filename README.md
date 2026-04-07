@@ -8,9 +8,14 @@ I build with PHP and Laravel, and I spend a lot of time on the part of software 
 
 ## Recently
 
-- `2026-04-06` Merged a contribution into [`php/php-src`](https://github.com/php/php-src/pull/21319) to promote invalid `ext/snmp` input warnings to `ValueError`.
-- `2026-02-25` Merged a fix into [`livewire/blaze`](https://github.com/livewire/blaze/pull/63) for a null offset deprecation in config path matching.
-- I continue to spend most of my open source time in the Laravel and PHP ecosystem, especially around edge cases, validation behavior, and regression fixes.
+_This section is updated automatically from your latest merged public upstream pull requests._
+
+<!-- recent-contributions:start -->
+- `2026-04-06` [`php/php-src#21319`](https://github.com/php/php-src/pull/21319) - ext/snmp: promote invalid-input warnings to ValueError
+- `2026-02-25` [`livewire/blaze#63`](https://github.com/livewire/blaze/pull/63) - Fix null offset deprecation in Config path matching
+<!-- recent-contributions:end -->
+
+I continue to spend most of my open source time in the Laravel and PHP ecosystem, especially around edge cases, validation behavior, and regression fixes.
 
 ## Open Source Focus
 
