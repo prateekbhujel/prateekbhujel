@@ -3,7 +3,9 @@ name: Update README
 on:
   workflow_dispatch:
   schedule:
-    - cron: "17 */6 * * *"
+    # GitHub Actions can't react directly when authored PRs merge in
+    # arbitrary external repositories, so this polls GitHub Search.
+    - cron: "17 * * * *"
 
 permissions:
   contents: write
