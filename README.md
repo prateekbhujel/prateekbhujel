@@ -11,6 +11,7 @@ I build with PHP and Laravel, and I spend a lot of time on the part of software 
 These are the upstream pull requests that actually made it in. I keep this section synced automatically so it stays honest.
 
 <!-- recent-contributions:start -->
+- Apr 24, 2026: `laravel/framework` merged [[13.x] Honor empty JSON:API sparse fieldsets](https://github.com/laravel/framework/pull/59813).
 - Apr 20, 2026: `php/php-src` merged [Fix enum case conflict in trait binding](https://github.com/php/php-src/pull/21771).
 - Apr 13, 2026: `php/php-src` merged [ext/snmp: rename argument number variables](https://github.com/php/php-src/pull/21723).
 - Apr 6, 2026: `php/php-src` merged [ext/snmp: promote invalid-input warnings to ValueError](https://github.com/php/php-src/pull/21319).
