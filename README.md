@@ -11,11 +11,11 @@ I build with PHP and Laravel, and I spend a lot of time on the part of software 
 These are the upstream pull requests that actually made it in. I keep this section synced automatically so it stays honest.
 
 <!-- recent-contributions:start -->
+- Apr 26, 2026: `UniSharp/laravel-filemanager` merged [Fix Symfony 7.4 Request::get deprecations in ItemsController](https://github.com/UniSharp/laravel-filemanager/pull/1284).
 - Apr 24, 2026: `laravel/framework` merged [[13.x] Honor empty JSON:API sparse fieldsets](https://github.com/laravel/framework/pull/59813).
 - Apr 20, 2026: `php/php-src` merged [Fix enum case conflict in trait binding](https://github.com/php/php-src/pull/21771).
 - Apr 13, 2026: `php/php-src` merged [ext/snmp: rename argument number variables](https://github.com/php/php-src/pull/21723).
 - Apr 6, 2026: `php/php-src` merged [ext/snmp: promote invalid-input warnings to ValueError](https://github.com/php/php-src/pull/21319).
-- Feb 25, 2026: `livewire/blaze` merged [Fix null offset deprecation in Config path matching](https://github.com/livewire/blaze/pull/63).
 <!-- recent-contributions:end -->
 
 I continue to spend most of my open source time in the Laravel and PHP ecosystem, especially around edge cases, validation behavior, and regression fixes.
