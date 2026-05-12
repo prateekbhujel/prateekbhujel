@@ -11,11 +11,11 @@ I build with PHP and Laravel, and I spend a lot of time on the part of software 
 These are the upstream pull requests that actually made it in. I keep this section synced automatically so it stays honest.
 
 <!-- recent-contributions:start -->
+- May 12, 2026: `carthage-software/php-src` merged [Avoid inherited method clone when no generic slot changes](https://github.com/carthage-software/php-src/pull/4).
 - May 12, 2026: `carthage-software/php-src` merged [Fix transitive generic interface args in Reflection](https://github.com/carthage-software/php-src/pull/3).
 - May 12, 2026: `carthage-software/php-src` merged [Avoid generic verify scan when no turbofish args](https://github.com/carthage-software/php-src/pull/2).
 - May 4, 2026: `php/php-src` merged [Fix GH-21831: Disallow SplObjectStorage mutation during getHash()](https://github.com/php/php-src/pull/21835).
 - May 1, 2026: `livewire/livewire` merged [[4.x] Fix lazy dynamic event listeners set in mount](https://github.com/livewire/livewire/pull/10221).
-- Apr 26, 2026: `UniSharp/laravel-filemanager` merged [Fix Symfony 7.4 Request::get deprecations in ItemsController](https://github.com/UniSharp/laravel-filemanager/pull/1284).
 <!-- recent-contributions:end -->
 
 I continue to spend most of my open source time in the Laravel and PHP ecosystem, especially around edge cases, validation behavior, and regression fixes.
