@@ -11,11 +11,11 @@ I build with PHP and Laravel, and I spend a lot of time on the part of software 
 These are the upstream pull requests that actually made it in. I keep this section synced automatically so it stays honest.
 
 <!-- recent-contributions:start -->
+- May 19, 2026: `UniSharp/laravel-filemanager` merged [Improve file search handling](https://github.com/UniSharp/laravel-filemanager/pull/1290).
 - May 14, 2026: `carthage-software/php-src` merged [Fix nested transitive interface args in Reflection](https://github.com/carthage-software/php-src/pull/5).
 - May 14, 2026: `php/doc-en` merged [Remove SimpleXML from bool false examples](https://github.com/php/doc-en/pull/5553).
 - May 12, 2026: `carthage-software/php-src` merged [Avoid inherited method clone when no generic slot changes](https://github.com/carthage-software/php-src/pull/4).
 - May 12, 2026: `carthage-software/php-src` merged [Fix transitive generic interface args in Reflection](https://github.com/carthage-software/php-src/pull/3).
-- May 12, 2026: `carthage-software/php-src` merged [Avoid generic verify scan when no turbofish args](https://github.com/carthage-software/php-src/pull/2).
 <!-- recent-contributions:end -->
 
 I continue to spend most of my open source time in the Laravel and PHP ecosystem, especially around edge cases, validation behavior, and regression fixes.
