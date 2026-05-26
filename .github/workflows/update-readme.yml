@@ -23,10 +23,12 @@ jobs:
         with:
           php-version: "8.3"
 
-      - name: Refresh recent contributions
+      - name: Refresh open source pull requests
         env:
           GH_USERNAME: prateekbhujel
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAX_OPEN_SOURCE_PRS: 20
+          PR_PAGE_SIZE: 10
         run: php scripts/update_recent_contributions.php
 
       - name: Commit README if changed
@@ -39,5 +41,5 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "chore: update recent contributions"
+          git commit -m "chore: update open source PR index"
           git push
