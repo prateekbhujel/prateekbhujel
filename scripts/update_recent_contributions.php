@@ -6,8 +6,7 @@ $readmePath = dirname(__DIR__) . '/README.md';
 $startMarker = '<!-- open-source-prs:start -->';
 $endMarker = '<!-- open-source-prs:end -->';
 $username = getenv('GH_USERNAME') ?: 'prateekbhujel';
-$maxItems = readPositiveIntegerEnv('MAX_OPEN_SOURCE_PRS', 20);
-$pageSize = readPositiveIntegerEnv('PR_PAGE_SIZE', 10);
+$maxItems = readPositiveIntegerEnv('MAX_MERGED_PRS', 20);
 
 try {
     $readme = file_get_contents($readmePath);
@@ -16,10 +15,10 @@ try {
         throw new RuntimeException('Could not read README.md.');
     }
 
-    $pullRequests = fetchUpstreamPullRequests($username, $maxItems);
+    $pullRequests = fetchMergedUpstreamPullRequests($username, $maxItems);
     $updatedReadme = replaceGeneratedBlock(
         $readme,
-        renderPullRequestBlock($pullRequests, $pageSize),
+        renderPullRequestBlock($pullRequests),
         $startMarker,
         $endMarker,
     );
@@ -30,7 +29,7 @@ try {
     }
 
     file_put_contents($readmePath, $updatedReadme);
-    fwrite(STDOUT, "Updated README open source pull request section.\n");
+    fwrite(STDOUT, "Updated README merged pull request section.\n");
     exit(0);
 } catch (Throwable $exception) {
     fwrite(STDERR, 'Failed to update README: ' . $exception->getMessage() . PHP_EOL);
@@ -50,7 +49,7 @@ function readPositiveIntegerEnv(string $name, int $default): int
     return is_int($integer) ? $integer : $default;
 }
 
-function fetchUpstreamPullRequests(string $username, int $maxItems): array
+function fetchMergedUpstreamPullRequests(string $username, int $maxItems): array
 {
     $items = [];
     $page = 1;
@@ -59,7 +58,7 @@ function fetchUpstreamPullRequests(string $username, int $maxItems): array
 
     do {
         $query = http_build_query([
-            'q' => sprintf('is:pr author:%s is:public', $username),
+            'q' => sprintf('is:pr author:%s is:public is:merged', $username),
             'sort' => 'updated',
             'order' => 'desc',
             'per_page' => (string) $perPage,
@@ -78,7 +77,7 @@ function fetchUpstreamPullRequests(string $username, int $maxItems): array
                 continue;
             }
 
-            $pullRequest = normalizePullRequestItem($item, $username);
+            $pullRequest = normalizeMergedPullRequestItem($item, $username);
 
             if ($pullRequest === null) {
                 continue;
@@ -86,9 +85,6 @@ function fetchUpstreamPullRequests(string $username, int $maxItems): array
 
             $items[] = $pullRequest;
 
-            if (count($items) >= $maxItems) {
-                break 2;
-            }
         }
 
         $page++;
@@ -99,7 +95,7 @@ function fetchUpstreamPullRequests(string $username, int $maxItems): array
     return array_slice($items, 0, $maxItems);
 }
 
-function normalizePullRequestItem(array $item, string $username): ?array
+function normalizeMergedPullRequestItem(array $item, string $username): ?array
 {
     $repo = extractRepositoryName((string) ($item['repository_url'] ?? ''));
     $repoParts = explode('/', $repo, 2);
@@ -113,34 +109,18 @@ function normalizePullRequestItem(array $item, string $username): ?array
 
     $pullRequest = $item['pull_request'] ?? [];
     $mergedAt = is_array($pullRequest) ? ($pullRequest['merged_at'] ?? null) : null;
-    $closedAt = $item['closed_at'] ?? null;
-    $updatedAt = $item['updated_at'] ?? null;
-    $createdAt = $item['created_at'] ?? null;
-    $state = (string) ($item['state'] ?? '');
 
-    if (is_string($mergedAt) && $mergedAt !== '') {
-        $status = 'Merged';
-        $sortAt = $mergedAt;
-    } elseif ($state === 'closed') {
-        $status = 'Closed';
-        $sortAt = is_string($closedAt) && $closedAt !== '' ? $closedAt : (string) $updatedAt;
-    } else {
-        $status = 'Open';
-        $sortAt = is_string($updatedAt) && $updatedAt !== '' ? $updatedAt : (string) $createdAt;
-    }
-
-    if ($sortAt === '') {
-        $sortAt = date(DATE_ATOM, 0);
+    if (! is_string($mergedAt) || $mergedAt === '') {
+        return null;
     }
 
     return [
-        'date' => substr($sortAt, 0, 10),
+        'date' => substr($mergedAt, 0, 10),
         'title' => trim((string) ($item['title'] ?? 'Untitled pull request')),
         'url' => (string) ($item['html_url'] ?? ''),
         'repo' => $repo,
         'number' => (int) ($item['number'] ?? 0),
-        'status' => $status,
-        'sort_at' => $sortAt,
+        'sort_at' => $mergedAt,
     ];
 }
 
@@ -206,113 +186,151 @@ function extractRepositoryName(string $repositoryUrl): string
     return ltrim(preg_replace('#^/repos/#', '', $path) ?? '', '/');
 }
 
-function renderPullRequestBlock(array $items, int $pageSize): string
+function renderPullRequestBlock(array $items): string
 {
     if ($items === []) {
-        return '- No public upstream pull requests found yet.';
+        return '- No merged public upstream pull requests found yet.';
     }
 
     $lines = [];
-    $pageCount = (int) ceil(count($items) / $pageSize);
 
-    $lines[] = renderSummary($items);
-
-    if ($pageCount > 1) {
-        $lines[] = '';
-        $lines[] = renderPageLinks($pageCount);
-    }
-
-    foreach (array_chunk($items, $pageSize) as $index => $pageItems) {
-        $pageNumber = $index + 1;
-        $start = $index * $pageSize + 1;
-        $end = $start + count($pageItems) - 1;
-
-        $lines[] = '';
-        $lines[] = sprintf('<a id="open-source-prs-page-%d"></a>', $pageNumber);
-        $lines[] = sprintf('<details%s>', $pageNumber === 1 ? ' open' : '');
-        $lines[] = sprintf('<summary><strong>Page %d</strong> - PRs %d-%d</summary>', $pageNumber, $start, $end);
-        $lines[] = '';
-        $lines[] = '| Date | Pull request | Repo | Status |';
-        $lines[] = '| --- | --- | --- | --- |';
-
-        foreach ($pageItems as $item) {
-            $lines[] = sprintf(
-                '| %s | [#%d %s](%s) | `%s` | %s |',
-                formatDisplayDate($item['date']),
-                $item['number'],
-                escapeTableCell($item['title']),
-                $item['url'],
-                escapeTableCell($item['repo']),
-                $item['status'],
-            );
-        }
-
-        if ($pageCount > 1) {
-            $lines[] = '';
-            $lines[] = renderSiblingLinks($pageNumber, $pageCount);
-        }
-
-        $lines[] = '';
-        $lines[] = '</details>';
-    }
+    $lines[] = renderBadges($items);
+    $lines[] = '';
+    $lines[] = renderSpotlightTable($items);
+    $lines[] = '';
+    $lines[] = '<strong>Recent accepted patches</strong>';
+    $lines[] = '';
+    $lines[] = renderCardGrid($items);
+    $lines[] = '';
+    $lines[] = renderLedger($items);
 
     return implode(PHP_EOL, $lines);
 }
 
-function renderSummary(array $items): string
+function renderBadges(array $items): string
 {
-    $counts = [
-        'Merged' => 0,
-        'Open' => 0,
-        'Closed' => 0,
-    ];
+    $repoCount = count(array_unique(array_column($items, 'repo')));
+    $latestMerge = formatDisplayDate($items[0]['date']);
 
-    foreach ($items as $item) {
-        if (isset($counts[$item['status']])) {
-            $counts[$item['status']]++;
+    return implode(PHP_EOL, [
+        '<p>',
+        renderBadge('accepted PRs', (string) count($items), '238636'),
+        renderBadge('upstream repos', (string) $repoCount, '0969da'),
+        renderBadge('latest merge', $latestMerge, 'f97316'),
+        '</p>',
+    ]);
+}
+
+function renderBadge(string $label, string $message, string $color): string
+{
+    $url = sprintf(
+        'https://img.shields.io/badge/%s-%s-%s?style=for-the-badge&labelColor=0d1117',
+        rawurlencode($label),
+        rawurlencode($message),
+        $color,
+    );
+
+    return sprintf('<img alt="%s: %s" src="%s">', escapeHtml($label), escapeHtml($message), $url);
+}
+
+function renderSpotlightTable(array $items): string
+{
+    $latest = $items[0];
+    $repoCounts = array_count_values(array_column($items, 'repo'));
+    arsort($repoCounts);
+    $topRepo = (string) array_key_first($repoCounts);
+    $topRepoCount = (int) ($repoCounts[$topRepo] ?? 0);
+    $oldest = $items[array_key_last($items)];
+
+    return implode(PHP_EOL, [
+        '<table>',
+        '<tr>',
+        sprintf(
+            '<td width="33%%" valign="top"><strong>Newest merge</strong><br><a href="%s">#%d %s</a><br><sub><code>%s</code> - %s</sub></td>',
+            escapeHtml($latest['url']),
+            $latest['number'],
+            escapeHtml($latest['title']),
+            escapeHtml($latest['repo']),
+            formatDisplayDate($latest['date']),
+        ),
+        sprintf(
+            '<td width="33%%" valign="top"><strong>Most represented upstream</strong><br><code>%s</code><br><sub>%d merged %s in this view</sub></td>',
+            escapeHtml($topRepo),
+            $topRepoCount,
+            $topRepoCount === 1 ? 'PR' : 'PRs',
+        ),
+        sprintf(
+            '<td width="33%%" valign="top"><strong>Merge window</strong><br>%s to %s<br><sub>Newest first, upstream-only</sub></td>',
+            formatDisplayDate($oldest['date']),
+            formatDisplayDate($latest['date']),
+        ),
+        '</tr>',
+        '</table>',
+    ]);
+}
+
+function renderCardGrid(array $items): string
+{
+    $lines = ['<table>'];
+
+    foreach (array_chunk($items, 2) as $rowIndex => $rowItems) {
+        $lines[] = '<tr>';
+
+        foreach ($rowItems as $itemIndex => $item) {
+            $position = ($rowIndex * 2) + $itemIndex + 1;
+            $lines[] = renderPullRequestCard($item, $position);
         }
+
+        if (count($rowItems) === 1) {
+            $lines[] = '<td width="50%" valign="top"></td>';
+        }
+
+        $lines[] = '</tr>';
     }
 
-    $parts = [];
+    $lines[] = '</table>';
 
-    foreach ($counts as $status => $count) {
-        if ($count > 0) {
-            $parts[] = sprintf('%s: %d', $status, $count);
-        }
-    }
+    return implode(PHP_EOL, $lines);
+}
 
+function renderPullRequestCard(array $item, int $position): string
+{
     return sprintf(
-        '**%d upstream PR%s tracked** across public non-personal repositories. %s.',
-        count($items),
-        count($items) === 1 ? '' : 's',
-        implode(', ', $parts),
+        '<td width="50%%" valign="top"><strong>%02d. <a href="%s">#%d %s</a></strong><br><sub><code>%s</code> - merged %s</sub></td>',
+        $position,
+        escapeHtml($item['url']),
+        $item['number'],
+        escapeHtml($item['title']),
+        escapeHtml($item['repo']),
+        formatDisplayDate($item['date']),
     );
 }
 
-function renderPageLinks(int $pageCount): string
+function renderLedger(array $items): string
 {
-    $links = [];
+    $lines = [
+        '<details>',
+        '<summary><strong>Compact merge ledger</strong> - newest first</summary>',
+        '',
+        '| Merged | Upstream | Pull request |',
+        '| --- | --- | --- |',
+    ];
 
-    for ($page = 1; $page <= $pageCount; $page++) {
-        $links[] = sprintf('[%d](#open-source-prs-page-%d)', $page, $page);
+    foreach ($items as $item) {
+        $lines[] = sprintf(
+            '| %s | `%s` | [#%d %s](%s) |',
+            formatDisplayDate($item['date']),
+            escapeTableCell($item['repo']),
+            $item['number'],
+            escapeTableCell($item['title']),
+            $item['url'],
+        );
     }
 
-    return 'Pages: ' . implode(' | ', $links);
-}
+    $lines[] = '';
+    $lines[] = '</details>';
 
-function renderSiblingLinks(int $pageNumber, int $pageCount): string
-{
-    $links = [];
-
-    if ($pageNumber > 1) {
-        $links[] = sprintf('[Previous](#open-source-prs-page-%d)', $pageNumber - 1);
-    }
-
-    if ($pageNumber < $pageCount) {
-        $links[] = sprintf('[Next](#open-source-prs-page-%d)', $pageNumber + 1);
-    }
-
-    return implode(' | ', $links);
+    return implode(PHP_EOL, $lines);
 }
 
 function formatDisplayDate(string $date): string
@@ -331,6 +349,11 @@ function escapeTableCell(string $value): string
     $value = preg_replace('/\s+/', ' ', $value) ?? $value;
 
     return str_replace(['|', '[', ']'], ['\\|', '\\[', '\\]'], trim($value));
+}
+
+function escapeHtml(string $value): string
+{
+    return htmlspecialchars($value, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8');
 }
 
 function replaceGeneratedBlock(
