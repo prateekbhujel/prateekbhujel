@@ -14,14 +14,14 @@ Accepted patches only. Automation rebuilds this ship log from the latest 20 merg
 <p>
 <img alt="accepted PRs: 20" src="https://img.shields.io/badge/accepted%20PRs-20-238636?style=for-the-badge&labelColor=0d1117">
 <img alt="upstream repos: 10" src="https://img.shields.io/badge/upstream%20repos-10-0969da?style=for-the-badge&labelColor=0d1117">
-<img alt="latest merge: Sep 20, 2026" src="https://img.shields.io/badge/latest%20merge-Sep%2020%2C%202026-f97316?style=for-the-badge&labelColor=0d1117">
+<img alt="latest merge: Sep 21, 2026" src="https://img.shields.io/badge/latest%20merge-Sep%2021%2C%202026-f97316?style=for-the-badge&labelColor=0d1117">
 </p>
 
 <table>
 <tr>
-<td width="33%" valign="top"><strong>Newest merge</strong><br><a href="https://github.com/NativePHP/superstack/pull/4">#4 Fix Pint code style, add CI Pint check, and remove unused welcome view</a><br><sub><code>NativePHP/superstack</code> - Sep 20, 2026</sub></td>
+<td width="33%" valign="top"><strong>Newest merge</strong><br><a href="https://github.com/livewire/livewire/pull/10717">#10717 [4.x] Prevent ReflectionException when resetting undeclared or dynamic properties</a><br><sub><code>livewire/livewire</code> - Sep 21, 2026</sub></td>
 <td width="33%" valign="top"><strong>Most represented upstream</strong><br><code>NativePHP/superstack</code><br><sub>5 merged PRs in this view</sub></td>
-<td width="33%" valign="top"><strong>Merge window</strong><br>May 12, 2026 to Sep 20, 2026<br><sub>Newest first, upstream-only</sub></td>
+<td width="33%" valign="top"><strong>Merge window</strong><br>May 14, 2026 to Sep 21, 2026<br><sub>Newest first, upstream-only</sub></td>
 </tr>
 </table>
 
@@ -29,44 +29,44 @@ Accepted patches only. Automation rebuilds this ship log from the latest 20 merg
 
 <table>
 <tr>
-<td width="50%" valign="top"><strong>01. <a href="https://github.com/NativePHP/superstack/pull/4">#4 Fix Pint code style, add CI Pint check, and remove unused welcome view</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
-<td width="50%" valign="top"><strong>02. <a href="https://github.com/NativePHP/superstack/pull/1">#1 Fix MCP tool name to match server instructions and README</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>01. <a href="https://github.com/livewire/livewire/pull/10717">#10717 [4.x] Prevent ReflectionException when resetting undeclared or dynamic properties</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 21, 2026</sub></td>
+<td width="50%" valign="top"><strong>02. <a href="https://github.com/livewire/livewire/pull/10718">#10718 [4.x] Prevent DOMDocument ValueError in PHP 8.4+ and null body warning on empty markup</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 21, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>03. <a href="https://github.com/NativePHP/superstack/pull/2">#2 Add HasApiTokens trait to User model for Sanctum token authentication</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
-<td width="50%" valign="top"><strong>04. <a href="https://github.com/NativePHP/superstack/pull/3">#3 Add Pest feature tests for SuperNative home and Filament admin panel</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>03. <a href="https://github.com/NativePHP/superstack/pull/4">#4 Fix Pint code style, add CI Pint check, and remove unused welcome view</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>04. <a href="https://github.com/NativePHP/superstack/pull/1">#1 Fix MCP tool name to match server instructions and README</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>05. <a href="https://github.com/NativePHP/superstack/pull/6">#6 Safely load api routes only when routes file exists</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
-<td width="50%" valign="top"><strong>06. <a href="https://github.com/symfony/symfony/pull/66180">#66180 [SecurityBundle] Require FrameworkBundle 8.2 for controller expression tests</a></strong><br><sub><code>symfony/symfony</code> - merged Sep 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>05. <a href="https://github.com/NativePHP/superstack/pull/2">#2 Add HasApiTokens trait to User model for Sanctum token authentication</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>06. <a href="https://github.com/NativePHP/superstack/pull/3">#3 Add Pest feature tests for SuperNative home and Filament admin panel</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>07. <a href="https://github.com/livewire/livewire/pull/10704">#10704 [4.x] Support direct assignment to virtual properties</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 15, 2026</sub></td>
-<td width="50%" valign="top"><strong>08. <a href="https://github.com/swoole/typephp/pull/110">#110 fix(compiler): preserve runtime class dispatch and introspection for polymorphic objects</a></strong><br><sub><code>swoole/typephp</code> - merged Sep 14, 2026</sub></td>
+<td width="50%" valign="top"><strong>07. <a href="https://github.com/NativePHP/superstack/pull/6">#6 Safely load api routes only when routes file exists</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>08. <a href="https://github.com/symfony/symfony/pull/66180">#66180 [SecurityBundle] Require FrameworkBundle 8.2 for controller expression tests</a></strong><br><sub><code>symfony/symfony</code> - merged Sep 20, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>09. <a href="https://github.com/swoole/typephp/pull/33">#33 fix(generator): normalize float literal emission and handle INF/NAN constants</a></strong><br><sub><code>swoole/typephp</code> - merged Aug 30, 2026</sub></td>
-<td width="50%" valign="top"><strong>10. <a href="https://github.com/php/php-src/pull/22986">#22986 Fix GH-19320: Prevent FPM UID and GID overflow</a></strong><br><sub><code>php/php-src</code> - merged Aug 26, 2026</sub></td>
+<td width="50%" valign="top"><strong>09. <a href="https://github.com/livewire/livewire/pull/10704">#10704 [4.x] Support direct assignment to virtual properties</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 15, 2026</sub></td>
+<td width="50%" valign="top"><strong>10. <a href="https://github.com/swoole/typephp/pull/110">#110 fix(compiler): preserve runtime class dispatch and introspection for polymorphic objects</a></strong><br><sub><code>swoole/typephp</code> - merged Sep 14, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>11. <a href="https://github.com/TimWolla/uriparser/pull/1">#1 Do not compress single IPv6 zero fields</a></strong><br><sub><code>TimWolla/uriparser</code> - merged Jul 17, 2026</sub></td>
-<td width="50%" valign="top"><strong>12. <a href="https://github.com/Utkarsha-Aryal/Baidikgurukul/pull/1">#1 Fix frontend runtime issues</a></strong><br><sub><code>Utkarsha-Aryal/Baidikgurukul</code> - merged Jul 7, 2026</sub></td>
+<td width="50%" valign="top"><strong>11. <a href="https://github.com/swoole/typephp/pull/33">#33 fix(generator): normalize float literal emission and handle INF/NAN constants</a></strong><br><sub><code>swoole/typephp</code> - merged Aug 30, 2026</sub></td>
+<td width="50%" valign="top"><strong>12. <a href="https://github.com/php/php-src/pull/22986">#22986 Fix GH-19320: Prevent FPM UID and GID overflow</a></strong><br><sub><code>php/php-src</code> - merged Aug 26, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>13. <a href="https://github.com/UniSharp/laravel-filemanager/pull/1291">#1291 Add opt-in upload image optimization and format conversion</a></strong><br><sub><code>UniSharp/laravel-filemanager</code> - merged Jun 15, 2026</sub></td>
-<td width="50%" valign="top"><strong>14. <a href="https://github.com/php/php-src/pull/22286">#22286 Fix GH-22280: Ignore non-finally try blocks</a></strong><br><sub><code>php/php-src</code> - merged Jun 14, 2026</sub></td>
+<td width="50%" valign="top"><strong>13. <a href="https://github.com/TimWolla/uriparser/pull/1">#1 Do not compress single IPv6 zero fields</a></strong><br><sub><code>TimWolla/uriparser</code> - merged Jul 17, 2026</sub></td>
+<td width="50%" valign="top"><strong>14. <a href="https://github.com/Utkarsha-Aryal/Baidikgurukul/pull/1">#1 Fix frontend runtime issues</a></strong><br><sub><code>Utkarsha-Aryal/Baidikgurukul</code> - merged Jul 7, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>15. <a href="https://github.com/php/php-src/pull/22145">#22145 Fix GH-22118: Compare equivalent fake closures in FCCs</a></strong><br><sub><code>php/php-src</code> - merged Jun 14, 2026</sub></td>
-<td width="50%" valign="top"><strong>16. <a href="https://github.com/UniSharp/laravel-filemanager/pull/1290">#1290 Improve file search handling</a></strong><br><sub><code>UniSharp/laravel-filemanager</code> - merged May 19, 2026</sub></td>
+<td width="50%" valign="top"><strong>15. <a href="https://github.com/UniSharp/laravel-filemanager/pull/1291">#1291 Add opt-in upload image optimization and format conversion</a></strong><br><sub><code>UniSharp/laravel-filemanager</code> - merged Jun 15, 2026</sub></td>
+<td width="50%" valign="top"><strong>16. <a href="https://github.com/php/php-src/pull/22286">#22286 Fix GH-22280: Ignore non-finally try blocks</a></strong><br><sub><code>php/php-src</code> - merged Jun 14, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>17. <a href="https://github.com/carthage-software/php-src/pull/5">#5 Fix nested transitive interface args in Reflection</a></strong><br><sub><code>carthage-software/php-src</code> - merged May 14, 2026</sub></td>
-<td width="50%" valign="top"><strong>18. <a href="https://github.com/php/doc-en/pull/5553">#5553 Remove SimpleXML from bool false examples</a></strong><br><sub><code>php/doc-en</code> - merged May 14, 2026</sub></td>
+<td width="50%" valign="top"><strong>17. <a href="https://github.com/php/php-src/pull/22145">#22145 Fix GH-22118: Compare equivalent fake closures in FCCs</a></strong><br><sub><code>php/php-src</code> - merged Jun 14, 2026</sub></td>
+<td width="50%" valign="top"><strong>18. <a href="https://github.com/UniSharp/laravel-filemanager/pull/1290">#1290 Improve file search handling</a></strong><br><sub><code>UniSharp/laravel-filemanager</code> - merged May 19, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>19. <a href="https://github.com/carthage-software/php-src/pull/4">#4 Avoid inherited method clone when no generic slot changes</a></strong><br><sub><code>carthage-software/php-src</code> - merged May 12, 2026</sub></td>
-<td width="50%" valign="top"><strong>20. <a href="https://github.com/carthage-software/php-src/pull/3">#3 Fix transitive generic interface args in Reflection</a></strong><br><sub><code>carthage-software/php-src</code> - merged May 12, 2026</sub></td>
+<td width="50%" valign="top"><strong>19. <a href="https://github.com/carthage-software/php-src/pull/5">#5 Fix nested transitive interface args in Reflection</a></strong><br><sub><code>carthage-software/php-src</code> - merged May 14, 2026</sub></td>
+<td width="50%" valign="top"><strong>20. <a href="https://github.com/php/doc-en/pull/5553">#5553 Remove SimpleXML from bool false examples</a></strong><br><sub><code>php/doc-en</code> - merged May 14, 2026</sub></td>
 </tr>
 </table>
 
@@ -75,6 +75,8 @@ Accepted patches only. Automation rebuilds this ship log from the latest 20 merg
 
 | Merged | Upstream | Pull request |
 | --- | --- | --- |
+| Sep 21, 2026 | `livewire/livewire` | [#10717 \[4.x\] Prevent ReflectionException when resetting undeclared or dynamic properties](https://github.com/livewire/livewire/pull/10717) |
+| Sep 21, 2026 | `livewire/livewire` | [#10718 \[4.x\] Prevent DOMDocument ValueError in PHP 8.4+ and null body warning on empty markup](https://github.com/livewire/livewire/pull/10718) |
 | Sep 20, 2026 | `NativePHP/superstack` | [#4 Fix Pint code style, add CI Pint check, and remove unused welcome view](https://github.com/NativePHP/superstack/pull/4) |
 | Sep 20, 2026 | `NativePHP/superstack` | [#1 Fix MCP tool name to match server instructions and README](https://github.com/NativePHP/superstack/pull/1) |
 | Sep 20, 2026 | `NativePHP/superstack` | [#2 Add HasApiTokens trait to User model for Sanctum token authentication](https://github.com/NativePHP/superstack/pull/2) |
@@ -93,8 +95,6 @@ Accepted patches only. Automation rebuilds this ship log from the latest 20 merg
 | May 19, 2026 | `UniSharp/laravel-filemanager` | [#1290 Improve file search handling](https://github.com/UniSharp/laravel-filemanager/pull/1290) |
 | May 14, 2026 | `carthage-software/php-src` | [#5 Fix nested transitive interface args in Reflection](https://github.com/carthage-software/php-src/pull/5) |
 | May 14, 2026 | `php/doc-en` | [#5553 Remove SimpleXML from bool false examples](https://github.com/php/doc-en/pull/5553) |
-| May 12, 2026 | `carthage-software/php-src` | [#4 Avoid inherited method clone when no generic slot changes](https://github.com/carthage-software/php-src/pull/4) |
-| May 12, 2026 | `carthage-software/php-src` | [#3 Fix transitive generic interface args in Reflection](https://github.com/carthage-software/php-src/pull/3) |
 
 </details>
 <!-- open-source-prs:end -->
