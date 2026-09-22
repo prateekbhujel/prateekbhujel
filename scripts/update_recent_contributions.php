@@ -2,38 +2,49 @@
 
 declare(strict_types=1);
 
-$readmePath = dirname(__DIR__) . '/README.md';
-$startMarker = '<!-- open-source-prs:start -->';
-$endMarker = '<!-- open-source-prs:end -->';
-$username = getenv('GH_USERNAME') ?: 'prateekbhujel';
-$maxItems = readPositiveIntegerEnv('MAX_MERGED_PRS', 20);
+if (realpath($_SERVER['SCRIPT_FILENAME'] ?? '') === __FILE__) {
+    exit(updateReadme());
+}
 
-try {
-    $readme = file_get_contents($readmePath);
+function updateReadme(): int
+{
+    $readmePath = dirname(__DIR__) . '/README.md';
+    $startMarker = '<!-- open-source-prs:start -->';
+    $endMarker = '<!-- open-source-prs:end -->';
+    $username = getenv('GH_USERNAME') ?: 'prateekbhujel';
+    $maxItems = readPositiveIntegerEnv('MAX_MERGED_PRS', 20);
 
-    if ($readme === false) {
-        throw new RuntimeException('Could not read README.md.');
+    try {
+        $readme = file_get_contents($readmePath);
+
+        if ($readme === false) {
+            throw new RuntimeException('Could not read README.md.');
+        }
+
+        $pullRequests = selectRecentContributions(
+            fetchMergedUpstreamPullRequests($username, $maxItems),
+            fetchDirectlyAppliedContributions($username),
+            $maxItems,
+        );
+        $updatedReadme = replaceGeneratedBlock(
+            $readme,
+            renderPullRequestBlock($pullRequests),
+            $startMarker,
+            $endMarker,
+        );
+
+        if ($updatedReadme === $readme) {
+            fwrite(STDOUT, "README is already up to date.\n");
+            return 0;
+        }
+
+        file_put_contents($readmePath, $updatedReadme);
+        fwrite(STDOUT, "Updated README accepted contributions section.\n");
+        return 0;
+    } catch (Throwable $exception) {
+        fwrite(STDERR, 'Failed to update README: ' . $exception->getMessage() . PHP_EOL);
+        return 1;
     }
-
-    $pullRequests = fetchMergedUpstreamPullRequests($username, $maxItems);
-    $updatedReadme = replaceGeneratedBlock(
-        $readme,
-        renderPullRequestBlock($pullRequests),
-        $startMarker,
-        $endMarker,
-    );
-
-    if ($updatedReadme === $readme) {
-        fwrite(STDOUT, "README is already up to date.\n");
-        exit(0);
-    }
-
-    file_put_contents($readmePath, $updatedReadme);
-    fwrite(STDOUT, "Updated README merged pull request section.\n");
-    exit(0);
-} catch (Throwable $exception) {
-    fwrite(STDERR, 'Failed to update README: ' . $exception->getMessage() . PHP_EOL);
-    exit(1);
 }
 
 function readPositiveIntegerEnv(string $name, int $default): int
@@ -121,7 +132,98 @@ function normalizeMergedPullRequestItem(array $item, string $username): ?array
         'repo' => $repo,
         'number' => (int) ($item['number'] ?? 0),
         'sort_at' => $mergedAt,
+        'kind' => 'merged',
     ];
+}
+
+function fetchDirectlyAppliedContributions(string $username): array
+{
+    $items = [];
+
+    foreach (require __DIR__ . '/directly_applied.php' as $entry) {
+        $api = 'https://api.github.com/repos/' . $entry['repo'];
+        $pullRequest = githubGetJson($api . '/pulls/' . $entry['number']);
+        $commit = githubGetJson($api . '/commits/' . $entry['sha']);
+        $branch = $pullRequest['base']['repo']['default_branch'] ?? '';
+        $comparison = githubGetJson($api . '/compare/' . $entry['sha'] . '...' . rawurlencode($branch));
+        $events = [];
+        $page = 1;
+
+        do {
+            $pageEvents = githubGetJson($api . '/issues/' . $entry['number'] . '/events?per_page=100&page=' . $page++);
+            $events = array_merge($events, $pageEvents);
+        } while (count($pageEvents) === 100);
+
+        $item = normalizeDirectlyAppliedContribution($entry, $pullRequest, $commit, $comparison, $events, $username);
+
+        if ($item === null) {
+            throw new RuntimeException('Could not verify applied contribution ' . $entry['repo'] . '#' . $entry['number'] . '.');
+        }
+
+        $items[] = $item;
+    }
+
+    return $items;
+}
+
+function normalizeDirectlyAppliedContribution(
+    array $entry,
+    array $pullRequest,
+    array $commit,
+    array $comparison,
+    array $events,
+    string $username,
+): ?array {
+    $repo = $entry['repo'];
+    $sha = $entry['sha'];
+    $upstream = $pullRequest['base']['repo'] ?? [];
+
+    if (($upstream['full_name'] ?? '') !== $repo || ($upstream['private'] ?? true)
+        || strcasecmp(explode('/', $repo)[0], $username) === 0
+        || ($pullRequest['number'] ?? 0) !== $entry['number']
+        || ($pullRequest['state'] ?? '') !== 'closed'
+        || strcasecmp($pullRequest['user']['login'] ?? '', $username) !== 0
+        || strcasecmp($commit['author']['login'] ?? '', $username) !== 0
+        || ($commit['sha'] ?? '') !== $sha
+        || ! in_array($comparison['status'] ?? '', ['ahead', 'identical'], true)
+        || ($comparison['merge_base_commit']['sha'] ?? '') !== $sha) {
+        return null;
+    }
+
+    foreach ($events as $event) {
+        if (($event['event'] ?? '') !== 'closed' || ($event['commit_id'] ?? '') !== $sha
+            || ($event['commit_url'] ?? '') !== 'https://api.github.com/repos/' . $repo . '/commits/' . $sha
+            || empty($event['created_at'])) {
+            continue;
+        }
+
+        return [
+            'date' => substr($event['created_at'], 0, 10),
+            'title' => trim($pullRequest['title']),
+            'url' => $pullRequest['html_url'],
+            'repo' => $repo,
+            'number' => $entry['number'],
+            'sort_at' => $event['created_at'],
+            'kind' => 'applied',
+            'commit_url' => 'https://github.com/' . $repo . '/commit/' . $sha,
+        ];
+    }
+
+    return null;
+}
+
+function selectRecentContributions(array $merged, array $applied, int $maxItems): array
+{
+    $items = [];
+
+    foreach (array_merge($merged, $applied) as $item) {
+        $key = strtolower($item['repo']) . '#' . $item['number'];
+        $items[$key] ??= $item;
+    }
+
+    usort($items, static fn (array $left, array $right): int => strcmp($right['sort_at'], $left['sort_at']));
+
+    return array_slice($items, 0, $maxItems);
 }
 
 function githubGetJson(string $url): array
@@ -189,7 +291,7 @@ function extractRepositoryName(string $repositoryUrl): string
 function renderPullRequestBlock(array $items): string
 {
     if ($items === []) {
-        return '- No merged public upstream pull requests found yet.';
+        return '- No accepted public upstream patches found yet.';
     }
 
     $lines = [];
@@ -214,9 +316,9 @@ function renderBadges(array $items): string
 
     return implode(PHP_EOL, [
         '<p>',
-        renderBadge('accepted PRs', (string) count($items), '238636'),
+        renderBadge('accepted patches', (string) count($items), '238636'),
         renderBadge('upstream repos', (string) $repoCount, '0969da'),
-        renderBadge('latest merge', $latestMerge, 'f97316'),
+        renderBadge('latest accepted', $latestMerge, 'f97316'),
         '</p>',
     ]);
 }
@@ -246,7 +348,7 @@ function renderSpotlightTable(array $items): string
         '<table>',
         '<tr>',
         sprintf(
-            '<td width="33%%" valign="top"><strong>Newest merge</strong><br><a href="%s">#%d %s</a><br><sub><code>%s</code> - %s</sub></td>',
+            '<td width="33%%" valign="top"><strong>Newest accepted patch</strong><br><a href="%s">#%d %s</a><br><sub><code>%s</code> - %s</sub></td>',
             escapeHtml($latest['url']),
             $latest['number'],
             escapeHtml($latest['title']),
@@ -254,13 +356,13 @@ function renderSpotlightTable(array $items): string
             formatDisplayDate($latest['date']),
         ),
         sprintf(
-            '<td width="33%%" valign="top"><strong>Most represented upstream</strong><br><code>%s</code><br><sub>%d merged %s in this view</sub></td>',
+            '<td width="33%%" valign="top"><strong>Most represented upstream</strong><br><code>%s</code><br><sub>%d accepted %s in this view</sub></td>',
             escapeHtml($topRepo),
             $topRepoCount,
-            $topRepoCount === 1 ? 'PR' : 'PRs',
+            $topRepoCount === 1 ? 'patch' : 'patches',
         ),
         sprintf(
-            '<td width="33%%" valign="top"><strong>Merge window</strong><br>%s to %s<br><sub>Newest first, upstream-only</sub></td>',
+            '<td width="33%%" valign="top"><strong>Acceptance window</strong><br>%s to %s<br><sub>Newest first, upstream-only</sub></td>',
             formatDisplayDate($oldest['date']),
             formatDisplayDate($latest['date']),
         ),
@@ -296,12 +398,13 @@ function renderCardGrid(array $items): string
 function renderPullRequestCard(array $item, int $position): string
 {
     return sprintf(
-        '<td width="50%%" valign="top"><strong>%02d. <a href="%s">#%d %s</a></strong><br><sub><code>%s</code> - merged %s</sub></td>',
+        '<td width="50%%" valign="top"><strong>%02d. <a href="%s">#%d %s</a></strong><br><sub><code>%s</code> - %s %s</sub></td>',
         $position,
         escapeHtml($item['url']),
         $item['number'],
         escapeHtml($item['title']),
         escapeHtml($item['repo']),
+        $item['kind'] === 'applied' ? '<a href="' . escapeHtml($item['commit_url']) . '">applied</a>' : 'merged',
         formatDisplayDate($item['date']),
     );
 }
@@ -310,20 +413,21 @@ function renderLedger(array $items): string
 {
     $lines = [
         '<details>',
-        '<summary><strong>Compact merge ledger</strong> - newest first</summary>',
+        '<summary><strong>Compact contribution ledger</strong> - newest first</summary>',
         '',
-        '| Merged | Upstream | Pull request |',
-        '| --- | --- | --- |',
+        '| Accepted | Upstream | Pull request | Landed as |',
+        '| --- | --- | --- | --- |',
     ];
 
     foreach ($items as $item) {
         $lines[] = sprintf(
-            '| %s | `%s` | [#%d %s](%s) |',
+            '| %s | `%s` | [#%d %s](%s) | %s |',
             formatDisplayDate($item['date']),
             escapeTableCell($item['repo']),
             $item['number'],
             escapeTableCell($item['title']),
             $item['url'],
+            $item['kind'] === 'applied' ? '[Applied commit](' . $item['commit_url'] . ')' : 'Merged PR',
         );
     }
 
