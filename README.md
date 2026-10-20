@@ -14,14 +14,14 @@ Recent accepted patches: merged pull requests and directly applied commits verif
 <p>
 <img alt="accepted patches: 20" src="https://img.shields.io/badge/accepted%20patches-20-238636?style=for-the-badge&labelColor=0d1117">
 <img alt="upstream repos: 10" src="https://img.shields.io/badge/upstream%20repos-10-0969da?style=for-the-badge&labelColor=0d1117">
-<img alt="latest accepted: Oct 19, 2026" src="https://img.shields.io/badge/latest%20accepted-Oct%2019%2C%202026-f97316?style=for-the-badge&labelColor=0d1117">
+<img alt="latest accepted: Oct 20, 2026" src="https://img.shields.io/badge/latest%20accepted-Oct%2020%2C%202026-f97316?style=for-the-badge&labelColor=0d1117">
 </p>
 
 <table>
 <tr>
-<td width="33%" valign="top"><strong>Newest accepted patch</strong><br><a href="https://github.com/nunomaduro/dev-null.sh/pull/392">#392 fix: eager load card data for search results</a><br><sub><code>nunomaduro/dev-null.sh</code> - Oct 19, 2026</sub></td>
+<td width="33%" valign="top"><strong>Newest accepted patch</strong><br><a href="https://github.com/swoole/typephp/pull/169">#169 fix(compiler): infer static return type for uniform match expressions</a><br><sub><code>swoole/typephp</code> - Oct 20, 2026</sub></td>
 <td width="33%" valign="top"><strong>Most represented upstream</strong><br><code>NativePHP/superstack</code><br><sub>5 accepted patches in this view</sub></td>
-<td width="33%" valign="top"><strong>Acceptance window</strong><br>Jun 14, 2026 to Oct 19, 2026<br><sub>Newest first, upstream-only</sub></td>
+<td width="33%" valign="top"><strong>Acceptance window</strong><br>Jun 15, 2026 to Oct 20, 2026<br><sub>Newest first, upstream-only</sub></td>
 </tr>
 </table>
 
@@ -29,44 +29,44 @@ Recent accepted patches: merged pull requests and directly applied commits verif
 
 <table>
 <tr>
-<td width="50%" valign="top"><strong>01. <a href="https://github.com/nunomaduro/dev-null.sh/pull/392">#392 fix: eager load card data for search results</a></strong><br><sub><code>nunomaduro/dev-null.sh</code> - merged Oct 19, 2026</sub></td>
-<td width="50%" valign="top"><strong>02. <a href="https://github.com/eramitgupta/dev-null.sh/pull/1">#1 feat: add Nepali language support and fix link preview test</a></strong><br><sub><code>eramitgupta/dev-null.sh</code> - merged Oct 17, 2026</sub></td>
+<td width="50%" valign="top"><strong>01. <a href="https://github.com/swoole/typephp/pull/169">#169 fix(compiler): infer static return type for uniform match expressions</a></strong><br><sub><code>swoole/typephp</code> - merged Oct 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>02. <a href="https://github.com/nunomaduro/dev-null.sh/pull/392">#392 fix: eager load card data for search results</a></strong><br><sub><code>nunomaduro/dev-null.sh</code> - merged Oct 19, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>03. <a href="https://github.com/nunomaduro/dev-null.sh/pull/113">#113 feat: developer achievements and unix ranks</a></strong><br><sub><code>nunomaduro/dev-null.sh</code> - merged Oct 16, 2026</sub></td>
-<td width="50%" valign="top"><strong>04. <a href="https://github.com/php/php-src/pull/23838">#23838 Fix GH-11662: Skip multicast test when unavailable</a></strong><br><sub><code>php/php-src</code> - <a href="https://github.com/php/php-src/commit/a1a7bd4b8b1b0eaccac025ce3fa7741ecae6c252">applied</a> Sep 22, 2026</sub></td>
+<td width="50%" valign="top"><strong>03. <a href="https://github.com/eramitgupta/dev-null.sh/pull/1">#1 feat: add Nepali language support and fix link preview test</a></strong><br><sub><code>eramitgupta/dev-null.sh</code> - merged Oct 17, 2026</sub></td>
+<td width="50%" valign="top"><strong>04. <a href="https://github.com/nunomaduro/dev-null.sh/pull/113">#113 feat: developer achievements and unix ranks</a></strong><br><sub><code>nunomaduro/dev-null.sh</code> - merged Oct 16, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>05. <a href="https://github.com/livewire/livewire/pull/10717">#10717 [4.x] Prevent ReflectionException when resetting undeclared or dynamic properties</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 21, 2026</sub></td>
-<td width="50%" valign="top"><strong>06. <a href="https://github.com/livewire/livewire/pull/10718">#10718 [4.x] Prevent DOMDocument ValueError in PHP 8.4+ and null body warning on empty markup</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 21, 2026</sub></td>
+<td width="50%" valign="top"><strong>05. <a href="https://github.com/php/php-src/pull/23838">#23838 Fix GH-11662: Skip multicast test when unavailable</a></strong><br><sub><code>php/php-src</code> - <a href="https://github.com/php/php-src/commit/a1a7bd4b8b1b0eaccac025ce3fa7741ecae6c252">applied</a> Sep 22, 2026</sub></td>
+<td width="50%" valign="top"><strong>06. <a href="https://github.com/livewire/livewire/pull/10717">#10717 [4.x] Prevent ReflectionException when resetting undeclared or dynamic properties</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 21, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>07. <a href="https://github.com/NativePHP/superstack/pull/4">#4 Fix Pint code style, add CI Pint check, and remove unused welcome view</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
-<td width="50%" valign="top"><strong>08. <a href="https://github.com/NativePHP/superstack/pull/1">#1 Fix MCP tool name to match server instructions and README</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>07. <a href="https://github.com/livewire/livewire/pull/10718">#10718 [4.x] Prevent DOMDocument ValueError in PHP 8.4+ and null body warning on empty markup</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 21, 2026</sub></td>
+<td width="50%" valign="top"><strong>08. <a href="https://github.com/NativePHP/superstack/pull/4">#4 Fix Pint code style, add CI Pint check, and remove unused welcome view</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>09. <a href="https://github.com/NativePHP/superstack/pull/2">#2 Add HasApiTokens trait to User model for Sanctum token authentication</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
-<td width="50%" valign="top"><strong>10. <a href="https://github.com/NativePHP/superstack/pull/3">#3 Add Pest feature tests for SuperNative home and Filament admin panel</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>09. <a href="https://github.com/NativePHP/superstack/pull/1">#1 Fix MCP tool name to match server instructions and README</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>10. <a href="https://github.com/NativePHP/superstack/pull/2">#2 Add HasApiTokens trait to User model for Sanctum token authentication</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>11. <a href="https://github.com/NativePHP/superstack/pull/6">#6 Safely load api routes only when routes file exists</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
-<td width="50%" valign="top"><strong>12. <a href="https://github.com/symfony/symfony/pull/66180">#66180 [SecurityBundle] Require FrameworkBundle 8.2 for controller expression tests</a></strong><br><sub><code>symfony/symfony</code> - merged Sep 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>11. <a href="https://github.com/NativePHP/superstack/pull/3">#3 Add Pest feature tests for SuperNative home and Filament admin panel</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>12. <a href="https://github.com/NativePHP/superstack/pull/6">#6 Safely load api routes only when routes file exists</a></strong><br><sub><code>NativePHP/superstack</code> - merged Sep 20, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>13. <a href="https://github.com/livewire/livewire/pull/10704">#10704 [4.x] Support direct assignment to virtual properties</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 15, 2026</sub></td>
-<td width="50%" valign="top"><strong>14. <a href="https://github.com/swoole/typephp/pull/110">#110 fix(compiler): preserve runtime class dispatch and introspection for polymorphic objects</a></strong><br><sub><code>swoole/typephp</code> - merged Sep 14, 2026</sub></td>
+<td width="50%" valign="top"><strong>13. <a href="https://github.com/symfony/symfony/pull/66180">#66180 [SecurityBundle] Require FrameworkBundle 8.2 for controller expression tests</a></strong><br><sub><code>symfony/symfony</code> - merged Sep 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>14. <a href="https://github.com/livewire/livewire/pull/10704">#10704 [4.x] Support direct assignment to virtual properties</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 15, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>15. <a href="https://github.com/swoole/typephp/pull/33">#33 fix(generator): normalize float literal emission and handle INF/NAN constants</a></strong><br><sub><code>swoole/typephp</code> - merged Aug 30, 2026</sub></td>
-<td width="50%" valign="top"><strong>16. <a href="https://github.com/php/php-src/pull/22986">#22986 Fix GH-19320: Prevent FPM UID and GID overflow</a></strong><br><sub><code>php/php-src</code> - merged Aug 26, 2026</sub></td>
+<td width="50%" valign="top"><strong>15. <a href="https://github.com/swoole/typephp/pull/110">#110 fix(compiler): preserve runtime class dispatch and introspection for polymorphic objects</a></strong><br><sub><code>swoole/typephp</code> - merged Sep 14, 2026</sub></td>
+<td width="50%" valign="top"><strong>16. <a href="https://github.com/swoole/typephp/pull/33">#33 fix(generator): normalize float literal emission and handle INF/NAN constants</a></strong><br><sub><code>swoole/typephp</code> - merged Aug 30, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>17. <a href="https://github.com/TimWolla/uriparser/pull/1">#1 Do not compress single IPv6 zero fields</a></strong><br><sub><code>TimWolla/uriparser</code> - merged Jul 17, 2026</sub></td>
-<td width="50%" valign="top"><strong>18. <a href="https://github.com/Utkarsha-Aryal/Baidikgurukul/pull/1">#1 Fix frontend runtime issues</a></strong><br><sub><code>Utkarsha-Aryal/Baidikgurukul</code> - merged Jul 7, 2026</sub></td>
+<td width="50%" valign="top"><strong>17. <a href="https://github.com/php/php-src/pull/22986">#22986 Fix GH-19320: Prevent FPM UID and GID overflow</a></strong><br><sub><code>php/php-src</code> - merged Aug 26, 2026</sub></td>
+<td width="50%" valign="top"><strong>18. <a href="https://github.com/TimWolla/uriparser/pull/1">#1 Do not compress single IPv6 zero fields</a></strong><br><sub><code>TimWolla/uriparser</code> - merged Jul 17, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>19. <a href="https://github.com/UniSharp/laravel-filemanager/pull/1291">#1291 Add opt-in upload image optimization and format conversion</a></strong><br><sub><code>UniSharp/laravel-filemanager</code> - merged Jun 15, 2026</sub></td>
-<td width="50%" valign="top"><strong>20. <a href="https://github.com/php/php-src/pull/22286">#22286 Fix GH-22280: Ignore non-finally try blocks</a></strong><br><sub><code>php/php-src</code> - merged Jun 14, 2026</sub></td>
+<td width="50%" valign="top"><strong>19. <a href="https://github.com/Utkarsha-Aryal/Baidikgurukul/pull/1">#1 Fix frontend runtime issues</a></strong><br><sub><code>Utkarsha-Aryal/Baidikgurukul</code> - merged Jul 7, 2026</sub></td>
+<td width="50%" valign="top"><strong>20. <a href="https://github.com/UniSharp/laravel-filemanager/pull/1291">#1291 Add opt-in upload image optimization and format conversion</a></strong><br><sub><code>UniSharp/laravel-filemanager</code> - merged Jun 15, 2026</sub></td>
 </tr>
 </table>
 
@@ -75,6 +75,7 @@ Recent accepted patches: merged pull requests and directly applied commits verif
 
 | Accepted | Upstream | Pull request | Landed as |
 | --- | --- | --- | --- |
+| Oct 20, 2026 | `swoole/typephp` | [#169 fix(compiler): infer static return type for uniform match expressions](https://github.com/swoole/typephp/pull/169) | Merged PR |
 | Oct 19, 2026 | `nunomaduro/dev-null.sh` | [#392 fix: eager load card data for search results](https://github.com/nunomaduro/dev-null.sh/pull/392) | Merged PR |
 | Oct 17, 2026 | `eramitgupta/dev-null.sh` | [#1 feat: add Nepali language support and fix link preview test](https://github.com/eramitgupta/dev-null.sh/pull/1) | Merged PR |
 | Oct 16, 2026 | `nunomaduro/dev-null.sh` | [#113 feat: developer achievements and unix ranks](https://github.com/nunomaduro/dev-null.sh/pull/113) | Merged PR |
@@ -94,7 +95,6 @@ Recent accepted patches: merged pull requests and directly applied commits verif
 | Jul 17, 2026 | `TimWolla/uriparser` | [#1 Do not compress single IPv6 zero fields](https://github.com/TimWolla/uriparser/pull/1) | Merged PR |
 | Jul 7, 2026 | `Utkarsha-Aryal/Baidikgurukul` | [#1 Fix frontend runtime issues](https://github.com/Utkarsha-Aryal/Baidikgurukul/pull/1) | Merged PR |
 | Jun 15, 2026 | `UniSharp/laravel-filemanager` | [#1291 Add opt-in upload image optimization and format conversion](https://github.com/UniSharp/laravel-filemanager/pull/1291) | Merged PR |
-| Jun 14, 2026 | `php/php-src` | [#22286 Fix GH-22280: Ignore non-finally try blocks](https://github.com/php/php-src/pull/22286) | Merged PR |
 
 </details>
 <!-- open-source-prs:end -->
