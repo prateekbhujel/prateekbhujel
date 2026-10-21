@@ -19,7 +19,7 @@ Recent accepted patches: merged pull requests and directly applied commits verif
 
 <table>
 <tr>
-<td width="33%" valign="top"><strong>Newest accepted patch</strong><br><a href="https://github.com/nunomaduro/dev-null.sh/pull/126">#126 feat: optimistic commit deletion</a><br><sub><code>nunomaduro/dev-null.sh</code> - Oct 20, 2026</sub></td>
+<td width="33%" valign="top"><strong>Newest accepted patch</strong><br><a href="https://github.com/dev-null-sh/dev-null.sh/pull/126">#126 feat: optimistic commit deletion</a><br><sub><code>dev-null-sh/dev-null.sh</code> - Oct 20, 2026</sub></td>
 <td width="33%" valign="top"><strong>Most represented upstream</strong><br><code>NativePHP/superstack</code><br><sub>5 accepted patches in this view</sub></td>
 <td width="33%" valign="top"><strong>Acceptance window</strong><br>Jul 17, 2026 to Oct 20, 2026<br><sub>Newest first, upstream-only</sub></td>
 </tr>
@@ -29,16 +29,16 @@ Recent accepted patches: merged pull requests and directly applied commits verif
 
 <table>
 <tr>
-<td width="50%" valign="top"><strong>01. <a href="https://github.com/nunomaduro/dev-null.sh/pull/126">#126 feat: optimistic commit deletion</a></strong><br><sub><code>nunomaduro/dev-null.sh</code> - merged Oct 20, 2026</sub></td>
-<td width="50%" valign="top"><strong>02. <a href="https://github.com/nunomaduro/dev-null.sh/pull/347">#347 perf: fast-path string parsers, precompute regexes, and memoize commit body segments</a></strong><br><sub><code>nunomaduro/dev-null.sh</code> - merged Oct 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>01. <a href="https://github.com/dev-null-sh/dev-null.sh/pull/126">#126 feat: optimistic commit deletion</a></strong><br><sub><code>dev-null-sh/dev-null.sh</code> - merged Oct 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>02. <a href="https://github.com/dev-null-sh/dev-null.sh/pull/347">#347 perf: fast-path string parsers, precompute regexes, and memoize commit body segments</a></strong><br><sub><code>dev-null-sh/dev-null.sh</code> - merged Oct 20, 2026</sub></td>
 </tr>
 <tr>
 <td width="50%" valign="top"><strong>03. <a href="https://github.com/swoole/typephp/pull/169">#169 fix(compiler): infer static return type for uniform match expressions</a></strong><br><sub><code>swoole/typephp</code> - merged Oct 20, 2026</sub></td>
-<td width="50%" valign="top"><strong>04. <a href="https://github.com/nunomaduro/dev-null.sh/pull/392">#392 fix: eager load card data for search results</a></strong><br><sub><code>nunomaduro/dev-null.sh</code> - merged Oct 19, 2026</sub></td>
+<td width="50%" valign="top"><strong>04. <a href="https://github.com/dev-null-sh/dev-null.sh/pull/392">#392 fix: eager load card data for search results</a></strong><br><sub><code>dev-null-sh/dev-null.sh</code> - merged Oct 19, 2026</sub></td>
 </tr>
 <tr>
 <td width="50%" valign="top"><strong>05. <a href="https://github.com/eramitgupta/dev-null.sh/pull/1">#1 feat: add Nepali language support and fix link preview test</a></strong><br><sub><code>eramitgupta/dev-null.sh</code> - merged Oct 17, 2026</sub></td>
-<td width="50%" valign="top"><strong>06. <a href="https://github.com/nunomaduro/dev-null.sh/pull/113">#113 feat: developer achievements and unix ranks</a></strong><br><sub><code>nunomaduro/dev-null.sh</code> - merged Oct 16, 2026</sub></td>
+<td width="50%" valign="top"><strong>06. <a href="https://github.com/dev-null-sh/dev-null.sh/pull/113">#113 feat: developer achievements and unix ranks</a></strong><br><sub><code>dev-null-sh/dev-null.sh</code> - merged Oct 16, 2026</sub></td>
 </tr>
 <tr>
 <td width="50%" valign="top"><strong>07. <a href="https://github.com/php/php-src/pull/23838">#23838 Fix GH-11662: Skip multicast test when unavailable</a></strong><br><sub><code>php/php-src</code> - <a href="https://github.com/php/php-src/commit/a1a7bd4b8b1b0eaccac025ce3fa7741ecae6c252">applied</a> Sep 22, 2026</sub></td>
@@ -75,12 +75,12 @@ Recent accepted patches: merged pull requests and directly applied commits verif
 
 | Accepted | Upstream | Pull request | Landed as |
 | --- | --- | --- | --- |
-| Oct 20, 2026 | `nunomaduro/dev-null.sh` | [#126 feat: optimistic commit deletion](https://github.com/nunomaduro/dev-null.sh/pull/126) | Merged PR |
-| Oct 20, 2026 | `nunomaduro/dev-null.sh` | [#347 perf: fast-path string parsers, precompute regexes, and memoize commit body segments](https://github.com/nunomaduro/dev-null.sh/pull/347) | Merged PR |
+| Oct 20, 2026 | `dev-null-sh/dev-null.sh` | [#126 feat: optimistic commit deletion](https://github.com/dev-null-sh/dev-null.sh/pull/126) | Merged PR |
+| Oct 20, 2026 | `dev-null-sh/dev-null.sh` | [#347 perf: fast-path string parsers, precompute regexes, and memoize commit body segments](https://github.com/dev-null-sh/dev-null.sh/pull/347) | Merged PR |
 | Oct 20, 2026 | `swoole/typephp` | [#169 fix(compiler): infer static return type for uniform match expressions](https://github.com/swoole/typephp/pull/169) | Merged PR |
-| Oct 19, 2026 | `nunomaduro/dev-null.sh` | [#392 fix: eager load card data for search results](https://github.com/nunomaduro/dev-null.sh/pull/392) | Merged PR |
+| Oct 19, 2026 | `dev-null-sh/dev-null.sh` | [#392 fix: eager load card data for search results](https://github.com/dev-null-sh/dev-null.sh/pull/392) | Merged PR |
 | Oct 17, 2026 | `eramitgupta/dev-null.sh` | [#1 feat: add Nepali language support and fix link preview test](https://github.com/eramitgupta/dev-null.sh/pull/1) | Merged PR |
-| Oct 16, 2026 | `nunomaduro/dev-null.sh` | [#113 feat: developer achievements and unix ranks](https://github.com/nunomaduro/dev-null.sh/pull/113) | Merged PR |
+| Oct 16, 2026 | `dev-null-sh/dev-null.sh` | [#113 feat: developer achievements and unix ranks](https://github.com/dev-null-sh/dev-null.sh/pull/113) | Merged PR |
 | Sep 22, 2026 | `php/php-src` | [#23838 Fix GH-11662: Skip multicast test when unavailable](https://github.com/php/php-src/pull/23838) | [Applied commit](https://github.com/php/php-src/commit/a1a7bd4b8b1b0eaccac025ce3fa7741ecae6c252) |
 | Sep 21, 2026 | `livewire/livewire` | [#10717 \[4.x\] Prevent ReflectionException when resetting undeclared or dynamic properties](https://github.com/livewire/livewire/pull/10717) | Merged PR |
 | Sep 21, 2026 | `livewire/livewire` | [#10718 \[4.x\] Prevent DOMDocument ValueError in PHP 8.4+ and null body warning on empty markup](https://github.com/livewire/livewire/pull/10718) | Merged PR |
