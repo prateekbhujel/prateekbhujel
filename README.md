@@ -12,16 +12,16 @@ Recent accepted patches: merged pull requests and directly applied commits verif
 
 <!-- open-source-prs:start -->
 <p>
-<img alt="accepted patches: 19" src="https://img.shields.io/badge/accepted%20patches-19-238636?style=for-the-badge&labelColor=0d1117">
-<img alt="upstream repos: 6" src="https://img.shields.io/badge/upstream%20repos-6-0969da?style=for-the-badge&labelColor=0d1117">
+<img alt="accepted patches: 15" src="https://img.shields.io/badge/accepted%20patches-15-238636?style=for-the-badge&labelColor=0d1117">
+<img alt="upstream repos: 5" src="https://img.shields.io/badge/upstream%20repos-5-0969da?style=for-the-badge&labelColor=0d1117">
 <img alt="latest accepted: Oct 20, 2026" src="https://img.shields.io/badge/latest%20accepted-Oct%2020%2C%202026-f97316?style=for-the-badge&labelColor=0d1117">
 </p>
 
 <table>
 <tr>
 <td width="33%" valign="top"><strong>Newest accepted patch</strong><br><a href="https://github.com/dev-null-sh/dev-null.sh/pull/347">#347 perf: fast-path string parsers, precompute regexes, and memoize commit body segments</a><br><sub><code>dev-null-sh/dev-null.sh</code> - Oct 20, 2026</sub></td>
-<td width="33%" valign="top"><strong>Most represented upstream</strong><br><code>php/php-src</code><br><sub>8 accepted patches in this view</sub></td>
-<td width="33%" valign="top"><strong>Acceptance window</strong><br>Apr 6, 2026 to Oct 20, 2026<br><sub>Newest first, upstream-only</sub></td>
+<td width="33%" valign="top"><strong>Most represented upstream</strong><br><code>php/php-src</code><br><sub>5 accepted patches in this view</sub></td>
+<td width="33%" valign="top"><strong>Acceptance window</strong><br>May 1, 2026 to Oct 20, 2026<br><sub>Newest first, upstream-only</sub></td>
 </tr>
 </table>
 
@@ -58,14 +58,6 @@ Recent accepted patches: merged pull requests and directly applied commits verif
 </tr>
 <tr>
 <td width="50%" valign="top"><strong>15. <a href="https://github.com/livewire/livewire/pull/10221">#10221 [4.x] Fix lazy dynamic event listeners set in mount</a></strong><br><sub><code>livewire/livewire</code> - merged May 1, 2026</sub></td>
-<td width="50%" valign="top"><strong>16. <a href="https://github.com/laravel/framework/pull/59813">#59813 [13.x] Honor empty JSON:API sparse fieldsets</a></strong><br><sub><code>laravel/framework</code> - merged Apr 24, 2026</sub></td>
-</tr>
-<tr>
-<td width="50%" valign="top"><strong>17. <a href="https://github.com/php/php-src/pull/21771">#21771 Fix enum case conflict in trait binding</a></strong><br><sub><code>php/php-src</code> - merged Apr 20, 2026</sub></td>
-<td width="50%" valign="top"><strong>18. <a href="https://github.com/php/php-src/pull/21723">#21723 ext/snmp: rename argument number variables</a></strong><br><sub><code>php/php-src</code> - merged Apr 13, 2026</sub></td>
-</tr>
-<tr>
-<td width="50%" valign="top"><strong>19. <a href="https://github.com/php/php-src/pull/21319">#21319 ext/snmp: promote invalid-input warnings to ValueError</a></strong><br><sub><code>php/php-src</code> - merged Apr 6, 2026</sub></td>
 <td width="50%" valign="top"></td>
 </tr>
 </table>
@@ -90,10 +82,6 @@ Recent accepted patches: merged pull requests and directly applied commits verif
 | Jun 14, 2026 | `php/php-src` | [#22145 Fix GH-22118: Compare equivalent fake closures in FCCs](https://github.com/php/php-src/pull/22145) | Merged PR |
 | May 4, 2026 | `php/php-src` | [#21835 Fix GH-21831: Disallow SplObjectStorage mutation during getHash()](https://github.com/php/php-src/pull/21835) | Merged PR |
 | May 1, 2026 | `livewire/livewire` | [#10221 \[4.x\] Fix lazy dynamic event listeners set in mount](https://github.com/livewire/livewire/pull/10221) | Merged PR |
-| Apr 24, 2026 | `laravel/framework` | [#59813 \[13.x\] Honor empty JSON:API sparse fieldsets](https://github.com/laravel/framework/pull/59813) | Merged PR |
-| Apr 20, 2026 | `php/php-src` | [#21771 Fix enum case conflict in trait binding](https://github.com/php/php-src/pull/21771) | Merged PR |
-| Apr 13, 2026 | `php/php-src` | [#21723 ext/snmp: rename argument number variables](https://github.com/php/php-src/pull/21723) | Merged PR |
-| Apr 6, 2026 | `php/php-src` | [#21319 ext/snmp: promote invalid-input warnings to ValueError](https://github.com/php/php-src/pull/21319) | Merged PR |
 
 </details>
 <!-- open-source-prs:end -->
