@@ -118,6 +118,29 @@ function normalizeMergedPullRequestItem(array $item, string $username): ?array
         return null;
     }
 
+    // Curate showcase strictly to core frameworks and major upstream projects:
+    // PHP core, Livewire, Laravel, Symfony, TypePHP, and key dev-null milestones.
+    $curatedRepositories = [
+        'php/php-src',
+        'livewire/livewire',
+        'laravel/framework',
+        'symfony/symfony',
+        'swoole/typephp',
+        'dev-null-sh/dev-null.sh',
+        'nunomaduro/dev-null.sh',
+    ];
+
+    if (! in_array(strtolower($repo), $curatedRepositories, true)) {
+        return null;
+    }
+
+    // Keep dev-null focused on flagship architectural milestones (#113 achievements & #347 performance)
+    // so it highlights landmark work rather than crowding out core language / framework patches.
+    if ((strtolower($repo) === 'dev-null-sh/dev-null.sh' || strtolower($repo) === 'nunomaduro/dev-null.sh')
+        && ! in_array((int) ($item['number'] ?? 0), [113, 347], true)) {
+        return null;
+    }
+
     $pullRequest = $item['pull_request'] ?? [];
     $mergedAt = is_array($pullRequest) ? ($pullRequest['merged_at'] ?? null) : null;
 
