@@ -14,14 +14,14 @@ Recent accepted patches: merged pull requests and directly applied commits verif
 <p>
 <img alt="accepted patches: 20" src="https://img.shields.io/badge/accepted%20patches-20-238636?style=for-the-badge&labelColor=0d1117">
 <img alt="upstream repos: 5" src="https://img.shields.io/badge/upstream%20repos-5-0969da?style=for-the-badge&labelColor=0d1117">
-<img alt="latest accepted: Nov 17, 2026" src="https://img.shields.io/badge/latest%20accepted-Nov%2017%2C%202026-f97316?style=for-the-badge&labelColor=0d1117">
+<img alt="latest accepted: Nov 19, 2026" src="https://img.shields.io/badge/latest%20accepted-Nov%2019%2C%202026-f97316?style=for-the-badge&labelColor=0d1117">
 </p>
 
 <table>
 <tr>
-<td width="33%" valign="top"><strong>Newest accepted patch</strong><br><a href="https://github.com/symfony/symfony/pull/68231">#68231 [Form][FrameworkBundle][Messenger] Escape user data and write raw dumps in console commands</a><br><sub><code>symfony/symfony</code> - Nov 17, 2026</sub></td>
+<td width="33%" valign="top"><strong>Newest accepted patch</strong><br><a href="https://github.com/symfony/symfony/pull/68282">#68282 [Console] Fix validation of int-backed enums and numeric union options in invokable commands</a><br><sub><code>symfony/symfony</code> - Nov 19, 2026</sub></td>
 <td width="33%" valign="top"><strong>Most represented upstream</strong><br><code>php/php-src</code><br><sub>7 accepted patches in this view</sub></td>
-<td width="33%" valign="top"><strong>Acceptance window</strong><br>May 1, 2026 to Nov 17, 2026<br><sub>Newest first, upstream-only</sub></td>
+<td width="33%" valign="top"><strong>Acceptance window</strong><br>May 4, 2026 to Nov 19, 2026<br><sub>Newest first, upstream-only</sub></td>
 </tr>
 </table>
 
@@ -29,44 +29,44 @@ Recent accepted patches: merged pull requests and directly applied commits verif
 
 <table>
 <tr>
-<td width="50%" valign="top"><strong>01. <a href="https://github.com/symfony/symfony/pull/68231">#68231 [Form][FrameworkBundle][Messenger] Escape user data and write raw dumps in console commands</a></strong><br><sub><code>symfony/symfony</code> - merged Nov 17, 2026</sub></td>
-<td width="50%" valign="top"><strong>02. <a href="https://github.com/symfony/symfony/pull/68204">#68204 [AssetMapper][Messenger][Translation][TwigBridge] Escape values in text output and write JSON raw in commands</a></strong><br><sub><code>symfony/symfony</code> - merged Nov 16, 2026</sub></td>
+<td width="50%" valign="top"><strong>01. <a href="https://github.com/symfony/symfony/pull/68282">#68282 [Console] Fix validation of int-backed enums and numeric union options in invokable commands</a></strong><br><sub><code>symfony/symfony</code> - merged Nov 19, 2026</sub></td>
+<td width="50%" valign="top"><strong>02. <a href="https://github.com/symfony/symfony/pull/68231">#68231 [Form][FrameworkBundle][Messenger] Escape user data and write raw dumps in console commands</a></strong><br><sub><code>symfony/symfony</code> - merged Nov 17, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>03. <a href="https://github.com/swoole/typephp/pull/182">#182 fix(compiler): convert Zend-backed scalar reads in native property compound writes and expressions</a></strong><br><sub><code>swoole/typephp</code> - merged Nov 9, 2026</sub></td>
-<td width="50%" valign="top"><strong>04. <a href="https://github.com/php/php-src/pull/24585">#24585 Fix GH-24577: CE-cache flag on interned class name visible before map_ptr offset</a></strong><br><sub><code>php/php-src</code> - merged Oct 27, 2026</sub></td>
+<td width="50%" valign="top"><strong>03. <a href="https://github.com/symfony/symfony/pull/68204">#68204 [AssetMapper][Messenger][Translation][TwigBridge] Escape values in text output and write JSON raw in commands</a></strong><br><sub><code>symfony/symfony</code> - merged Nov 16, 2026</sub></td>
+<td width="50%" valign="top"><strong>04. <a href="https://github.com/swoole/typephp/pull/182">#182 fix(compiler): convert Zend-backed scalar reads in native property compound writes and expressions</a></strong><br><sub><code>swoole/typephp</code> - merged Nov 9, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>05. <a href="https://github.com/php/php-src/pull/21828">#21828 Add regression test for GH-21824</a></strong><br><sub><code>php/php-src</code> - merged Oct 23, 2026</sub></td>
-<td width="50%" valign="top"><strong>06. <a href="https://github.com/dev-null-sh/dev-null.sh/pull/347">#347 perf: fast-path string parsers, precompute regexes, and memoize commit body segments</a></strong><br><sub><code>dev-null-sh/dev-null.sh</code> - merged Oct 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>05. <a href="https://github.com/php/php-src/pull/24585">#24585 Fix GH-24577: CE-cache flag on interned class name visible before map_ptr offset</a></strong><br><sub><code>php/php-src</code> - merged Oct 27, 2026</sub></td>
+<td width="50%" valign="top"><strong>06. <a href="https://github.com/php/php-src/pull/21828">#21828 Add regression test for GH-21824</a></strong><br><sub><code>php/php-src</code> - merged Oct 23, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>07. <a href="https://github.com/swoole/typephp/pull/169">#169 fix(compiler): infer static return type for uniform match expressions</a></strong><br><sub><code>swoole/typephp</code> - merged Oct 20, 2026</sub></td>
-<td width="50%" valign="top"><strong>08. <a href="https://github.com/dev-null-sh/dev-null.sh/pull/113">#113 feat: developer achievements and unix ranks</a></strong><br><sub><code>dev-null-sh/dev-null.sh</code> - merged Oct 16, 2026</sub></td>
+<td width="50%" valign="top"><strong>07. <a href="https://github.com/dev-null-sh/dev-null.sh/pull/347">#347 perf: fast-path string parsers, precompute regexes, and memoize commit body segments</a></strong><br><sub><code>dev-null-sh/dev-null.sh</code> - merged Oct 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>08. <a href="https://github.com/swoole/typephp/pull/169">#169 fix(compiler): infer static return type for uniform match expressions</a></strong><br><sub><code>swoole/typephp</code> - merged Oct 20, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>09. <a href="https://github.com/php/php-src/pull/23838">#23838 Fix GH-11662: Skip multicast test when unavailable</a></strong><br><sub><code>php/php-src</code> - <a href="https://github.com/php/php-src/commit/a1a7bd4b8b1b0eaccac025ce3fa7741ecae6c252">applied</a> Sep 22, 2026</sub></td>
-<td width="50%" valign="top"><strong>10. <a href="https://github.com/livewire/livewire/pull/10717">#10717 [4.x] Prevent ReflectionException when resetting undeclared or dynamic properties</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 21, 2026</sub></td>
+<td width="50%" valign="top"><strong>09. <a href="https://github.com/dev-null-sh/dev-null.sh/pull/113">#113 feat: developer achievements and unix ranks</a></strong><br><sub><code>dev-null-sh/dev-null.sh</code> - merged Oct 16, 2026</sub></td>
+<td width="50%" valign="top"><strong>10. <a href="https://github.com/php/php-src/pull/23838">#23838 Fix GH-11662: Skip multicast test when unavailable</a></strong><br><sub><code>php/php-src</code> - <a href="https://github.com/php/php-src/commit/a1a7bd4b8b1b0eaccac025ce3fa7741ecae6c252">applied</a> Sep 22, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>11. <a href="https://github.com/livewire/livewire/pull/10718">#10718 [4.x] Prevent DOMDocument ValueError in PHP 8.4+ and null body warning on empty markup</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 21, 2026</sub></td>
-<td width="50%" valign="top"><strong>12. <a href="https://github.com/symfony/symfony/pull/66180">#66180 [SecurityBundle] Require FrameworkBundle 8.2 for controller expression tests</a></strong><br><sub><code>symfony/symfony</code> - merged Sep 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>11. <a href="https://github.com/livewire/livewire/pull/10717">#10717 [4.x] Prevent ReflectionException when resetting undeclared or dynamic properties</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 21, 2026</sub></td>
+<td width="50%" valign="top"><strong>12. <a href="https://github.com/livewire/livewire/pull/10718">#10718 [4.x] Prevent DOMDocument ValueError in PHP 8.4+ and null body warning on empty markup</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 21, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>13. <a href="https://github.com/livewire/livewire/pull/10704">#10704 [4.x] Support direct assignment to virtual properties</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 15, 2026</sub></td>
-<td width="50%" valign="top"><strong>14. <a href="https://github.com/swoole/typephp/pull/110">#110 fix(compiler): preserve runtime class dispatch and introspection for polymorphic objects</a></strong><br><sub><code>swoole/typephp</code> - merged Sep 14, 2026</sub></td>
+<td width="50%" valign="top"><strong>13. <a href="https://github.com/symfony/symfony/pull/66180">#66180 [SecurityBundle] Require FrameworkBundle 8.2 for controller expression tests</a></strong><br><sub><code>symfony/symfony</code> - merged Sep 20, 2026</sub></td>
+<td width="50%" valign="top"><strong>14. <a href="https://github.com/livewire/livewire/pull/10704">#10704 [4.x] Support direct assignment to virtual properties</a></strong><br><sub><code>livewire/livewire</code> - merged Sep 15, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>15. <a href="https://github.com/swoole/typephp/pull/33">#33 fix(generator): normalize float literal emission and handle INF/NAN constants</a></strong><br><sub><code>swoole/typephp</code> - merged Aug 30, 2026</sub></td>
-<td width="50%" valign="top"><strong>16. <a href="https://github.com/php/php-src/pull/22986">#22986 Fix GH-19320: Prevent FPM UID and GID overflow</a></strong><br><sub><code>php/php-src</code> - merged Aug 26, 2026</sub></td>
+<td width="50%" valign="top"><strong>15. <a href="https://github.com/swoole/typephp/pull/110">#110 fix(compiler): preserve runtime class dispatch and introspection for polymorphic objects</a></strong><br><sub><code>swoole/typephp</code> - merged Sep 14, 2026</sub></td>
+<td width="50%" valign="top"><strong>16. <a href="https://github.com/swoole/typephp/pull/33">#33 fix(generator): normalize float literal emission and handle INF/NAN constants</a></strong><br><sub><code>swoole/typephp</code> - merged Aug 30, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>17. <a href="https://github.com/php/php-src/pull/22286">#22286 Fix GH-22280: Ignore non-finally try blocks</a></strong><br><sub><code>php/php-src</code> - merged Jun 14, 2026</sub></td>
-<td width="50%" valign="top"><strong>18. <a href="https://github.com/php/php-src/pull/22145">#22145 Fix GH-22118: Compare equivalent fake closures in FCCs</a></strong><br><sub><code>php/php-src</code> - merged Jun 14, 2026</sub></td>
+<td width="50%" valign="top"><strong>17. <a href="https://github.com/php/php-src/pull/22986">#22986 Fix GH-19320: Prevent FPM UID and GID overflow</a></strong><br><sub><code>php/php-src</code> - merged Aug 26, 2026</sub></td>
+<td width="50%" valign="top"><strong>18. <a href="https://github.com/php/php-src/pull/22286">#22286 Fix GH-22280: Ignore non-finally try blocks</a></strong><br><sub><code>php/php-src</code> - merged Jun 14, 2026</sub></td>
 </tr>
 <tr>
-<td width="50%" valign="top"><strong>19. <a href="https://github.com/php/php-src/pull/21835">#21835 Fix GH-21831: Disallow SplObjectStorage mutation during getHash()</a></strong><br><sub><code>php/php-src</code> - merged May 4, 2026</sub></td>
-<td width="50%" valign="top"><strong>20. <a href="https://github.com/livewire/livewire/pull/10221">#10221 [4.x] Fix lazy dynamic event listeners set in mount</a></strong><br><sub><code>livewire/livewire</code> - merged May 1, 2026</sub></td>
+<td width="50%" valign="top"><strong>19. <a href="https://github.com/php/php-src/pull/22145">#22145 Fix GH-22118: Compare equivalent fake closures in FCCs</a></strong><br><sub><code>php/php-src</code> - merged Jun 14, 2026</sub></td>
+<td width="50%" valign="top"><strong>20. <a href="https://github.com/php/php-src/pull/21835">#21835 Fix GH-21831: Disallow SplObjectStorage mutation during getHash()</a></strong><br><sub><code>php/php-src</code> - merged May 4, 2026</sub></td>
 </tr>
 </table>
 
@@ -75,6 +75,7 @@ Recent accepted patches: merged pull requests and directly applied commits verif
 
 | Accepted | Upstream | Pull request | Landed as |
 | --- | --- | --- | --- |
+| Nov 19, 2026 | `symfony/symfony` | [#68282 \[Console\] Fix validation of int-backed enums and numeric union options in invokable commands](https://github.com/symfony/symfony/pull/68282) | Merged PR |
 | Nov 17, 2026 | `symfony/symfony` | [#68231 \[Form\]\[FrameworkBundle\]\[Messenger\] Escape user data and write raw dumps in console commands](https://github.com/symfony/symfony/pull/68231) | Merged PR |
 | Nov 16, 2026 | `symfony/symfony` | [#68204 \[AssetMapper\]\[Messenger\]\[Translation\]\[TwigBridge\] Escape values in text output and write JSON raw in commands](https://github.com/symfony/symfony/pull/68204) | Merged PR |
 | Nov 9, 2026 | `swoole/typephp` | [#182 fix(compiler): convert Zend-backed scalar reads in native property compound writes and expressions](https://github.com/swoole/typephp/pull/182) | Merged PR |
@@ -94,7 +95,6 @@ Recent accepted patches: merged pull requests and directly applied commits verif
 | Jun 14, 2026 | `php/php-src` | [#22286 Fix GH-22280: Ignore non-finally try blocks](https://github.com/php/php-src/pull/22286) | Merged PR |
 | Jun 14, 2026 | `php/php-src` | [#22145 Fix GH-22118: Compare equivalent fake closures in FCCs](https://github.com/php/php-src/pull/22145) | Merged PR |
 | May 4, 2026 | `php/php-src` | [#21835 Fix GH-21831: Disallow SplObjectStorage mutation during getHash()](https://github.com/php/php-src/pull/21835) | Merged PR |
-| May 1, 2026 | `livewire/livewire` | [#10221 \[4.x\] Fix lazy dynamic event listeners set in mount](https://github.com/livewire/livewire/pull/10221) | Merged PR |
 
 </details>
 <!-- open-source-prs:end -->
